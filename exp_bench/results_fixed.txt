@@ -1,0 +1,28 @@
+== toy deep-SSM stream (5 tasks, polarity-conflicting), poles fixed at initialisation ==
+C=12  ft   rho=-      n=5 final 0.485±0.107  forgetting 0.631±0.138  last-task 0.966±0.031  bits 0  acc(same-polarity tasks) 0.56 / (conflicting) 0.36  d-final +0.000  d-forgetting +0.000 (0/5)
+C=12  gpm  rho=0.99   n=5 final 0.604±0.027  forgetting 0.167±0.152  last-task 0.341±0.241  bits 5369  acc(same-polarity tasks) 0.57 / (conflicting) 0.57  d-final +0.120  d-forgetting -0.464 (5/5)
+C=12  gpm  rho=0.999  n=5 final 0.600±0.098  forgetting 0.120±0.184  last-task 0.379±0.390  bits 6284  acc(same-polarity tasks) 0.48 / (conflicting) 0.51  d-final +0.115  d-forgetting -0.511 (5/5)
+C=32  ft   rho=-      n=5 final 0.478±0.087  forgetting 0.641±0.106  last-task 0.961±0.035  bits 0  acc(same-polarity tasks) 0.58 / (conflicting) 0.35  d-final +0.000  d-forgetting +0.000 (0/5)
+C=32  gpm  rho=0.99   n=5 final 0.640±0.094  forgetting 0.219±0.180  last-task 0.333±0.355  bits 13856  acc(same-polarity tasks) 0.55 / (conflicting) 0.56  d-final +0.161  d-forgetting -0.422 (5/5)
+C=32  gpm  rho=0.999  n=5 final 0.631±0.110  forgetting 0.175±0.229  last-task 0.518±0.375  bits 16179  acc(same-polarity tasks) 0.48 / (conflicting) 0.59  d-final +0.153  d-forgetting -0.466 (5/5)
+
+== split-MNIST, poles fixed at initialisation, full-incremental ==
+joint  rho=-      n=5 final avg 0.873±0.004  forgetting 0.000±0.000  last-task 0.812±0.015  bits 0  d-final vs ft +0.678 (5/5)
+ft     rho=-      n=5 final avg 0.195±0.001  forgetting 0.963±0.013  last-task 0.971±0.003  bits 0  d-final vs ft +0.000 (0/5)
+gpm    rho=0.95   n=5 final avg 0.298±0.059  forgetting 0.510±0.128  last-task 0.490±0.285  bits 40768  d-final vs ft +0.104 (5/5)
+gpm    rho=0.99   n=5 final avg 0.343±0.030  forgetting 0.120±0.099  last-task 0.089±0.189  bits 58956  d-final vs ft +0.148 (5/5)
+gpm    rho=0.999  n=5 final avg 0.222±0.033  forgetting 0.006±0.012  last-task 0.000±0.000  bits 96096  d-final vs ft +0.027 (5/5)
+
+== split-MNIST, poles fixed at initialisation, task-incremental ==
+joint  rho=-      n=5 final avg 0.976±0.004  forgetting 0.000±0.000  last-task 0.962±0.008  bits 0  d-final vs ft +0.231 (5/5)
+ft     rho=-      n=5 final avg 0.745±0.078  forgetting 0.275±0.095  last-task 0.971±0.003  bits 0  d-final vs ft +0.000 (0/5)
+gpm    rho=0.95   n=5 final avg 0.748±0.084  forgetting 0.099±0.067  last-task 0.734±0.132  bits 40768  d-final vs ft +0.002 (3/5)
+gpm    rho=0.99   n=5 final avg 0.739±0.027  forgetting 0.037±0.016  last-task 0.665±0.113  bits 58956  d-final vs ft -0.006 (2/5)
+gpm    rho=0.999  n=5 final avg 0.630±0.031  forgetting 0.001±0.002  last-task 0.502±0.034  bits 96096  d-final vs ft -0.116 (1/5)
+
+== perm-MNIST, poles fixed at initialisation (domain-incremental) ==
+joint  rho=-      n=5 final avg 0.550±0.019  forgetting 0.000±0.000  last-task 0.529±0.031  bits 0  d-final vs ft +0.341 (5/5)
+ft     rho=-      n=5 final avg 0.209±0.012  forgetting 0.619±0.020  last-task 0.768±0.014  bits 0  d-final vs ft +0.000 (0/5)
+gpm    rho=0.95   n=5 final avg 0.231±0.014  forgetting 0.316±0.032  last-task 0.341±0.065  bits 70630  d-final vs ft +0.022 (4/5)
+gpm    rho=0.99   n=5 final avg 0.257±0.011  forgetting 0.089±0.031  last-task 0.171±0.030  bits 81612  d-final vs ft +0.048 (5/5)
+gpm    rho=0.999  n=5 final avg 0.250±0.011  forgetting 0.011±0.006  last-task 0.177±0.014  bits 90694  d-final vs ft +0.040 (5/5)

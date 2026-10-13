@@ -1,0 +1,4 @@
+(a) zero-interference optimum = c: closed form vs lstsq max err 9.56e-13; vs independent gradient descent max err 5.88e-10
+(a) E[c^2] Monte Carlo 6.3738 vs sigma^2 (n - rank G) = 6.3700  (rank G = 7, p - r = 7)
+(b) frontier: parametric D_mu vs independent projected-gradient solver, max |gap| 3.63e-14;  shadow-price check |dE^2/d eps^2 + mu|/mu max 1.07e-07; monotone: ok
+(c) one-example reach formula vs maximisation over the budget (4001-point grid; random sampling never exceeds it): max err 6.73e-09

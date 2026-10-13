@@ -1,0 +1,35 @@
+model_gdn360m: 600 prompts; calibration 300, test 300; overall forced-choice acc 0.410
+  n= 4: acc 0.440 (chance 0.250)  mean age 7
+  n= 8: acc 0.460 (chance 0.125)  mean age 14
+  n=16: acc 0.400 (chance 0.062)  mean age 33
+  n=24: acc 0.340 (chance 0.042)  mean age 40
+  long-memory heads (median half-life >= 256): 20 of 84 (24%)
+
+TEST-set AUC (pooled over loads):
+  B1 age                 0.603
+  B2 n                   0.524
+  B3 age+onehot(n)       0.575
+  P1                     0.626
+  P1b                    0.621
+  P1 shuffled            0.449
+  B3+P1                  0.693
+  B3+P1b                 0.664
+  B3+P1 shuffled         0.538
+  H1: AUC(B3+P1) - AUC(B3): +0.118  95% bootstrap CI [+0.056, +0.182]
+  AUC(B3+P1) - AUC(B3+shuffled P1): +0.155  95% bootstrap CI [+0.084, +0.225]
+  H1 criterion (delta >= 0.03 and CI excludes 0): MET
+
+Within each load (test prompts): AUC of P1 alone / shuffled P1 / age
+  n= 4: P1 0.268  shuffled 0.433  age 0.288  (n_test=75, successes=32)
+  n= 8: P1 0.219  shuffled 0.414  age 0.255  (n_test=75, successes=33)
+  n=16: P1 0.490  shuffled 0.467  age 0.473  (n_test=75, successes=31)
+  n=24: P1 0.558  shuffled 0.470  age 0.558  (n_test=75, successes=28)
+
+Decision test: recall(lowest-psi tercile) - recall(highest-psi tercile), weighted over loads: +0.230  (per load: [np.float64(0.44), np.float64(0.56), np.float64(0.04), np.float64(-0.12)])
+Secondary: partial rank correlation of P1 with candidate log-prob (controls: n, age): -0.400  95% CI [-0.495, -0.297]
+
+Exploratory: P1 by layer block (mean over long-memory heads in the block), test-set AUC alone:
+  layers 0-5: long heads 3  AUC 0.368
+  layers 6-11: long heads 3  AUC 0.365
+  layers 12-17: long heads 11  AUC 0.373
+  layers 18-23: long heads 3  AUC 0.389

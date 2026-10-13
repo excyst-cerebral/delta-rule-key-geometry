@@ -1,0 +1,38 @@
+model_gdn340m: partial rank correlation with candidate log-prob (controls: age, one-hot n); negative = higher psi -> worse recall
+  P1 (long-memory heads)         test         r = -0.228  [-0.339, -0.115]
+  P1 (long-memory heads)         calibration  r = -0.308  [-0.403, -0.213]
+  P1 (long-memory heads)         all          r = -0.267  [-0.338, -0.193]
+  P1 shuffled within n (null)    test         r = -0.062  [-0.163, +0.045]
+  P1 shuffled within n (null)    calibration  r = -0.018  [-0.129, +0.096]
+  P1 shuffled within n (null)    all          r = -0.042  [-0.119, +0.037]
+  P1b (all heads)                test         r = -0.236  [-0.338, -0.130]
+  P1b (all heads)                calibration  r = -0.302  [-0.395, -0.203]
+  P1b (all heads)                all          r = -0.264  [-0.331, -0.191]
+  short-memory heads             test         r = -0.244  [-0.350, -0.135]
+  short-memory heads             calibration  r = -0.290  [-0.385, -0.189]
+  short-memory heads             all          r = -0.262  [-0.336, -0.182]
+  P1 on whole-prefix mean psi    test         r = +0.037  [-0.081, +0.146]
+  P1 on whole-prefix mean psi    calibration  r = +0.075  [-0.034, +0.202]
+  P1 on whole-prefix mean psi    all          r = +0.061  [-0.024, +0.144]
+
+per load (all prompts, controls: age):
+  n= 4: partial r(P1, logp) -0.080   null (shuffled) +0.127   corr(P1, age) +0.93
+  n= 8: partial r(P1, logp) -0.082   null (shuffled) -0.021   corr(P1, age) +0.98
+  n=16: partial r(P1, logp) -0.047   null (shuffled) -0.067   corr(P1, age) +0.98
+  n=24: partial r(P1, logp) -0.146   null (shuffled) -0.031   corr(P1, age) +0.97
+
+by layer block (long-memory heads), all prompts, controls: age + n:
+  layers 6-11 (5 long heads): r = -0.267 [-0.340, -0.189]
+  layers 12-17 (8 long heads): r = -0.268 [-0.344, -0.192]
+  layers 18-23 (8 long heads): r = -0.256 [-0.329, -0.185]
+
+collinearity: Spearman(P1, age) = 0.647  Spearman(P1, n) = -0.081
+
+EXACT age/load control: within-(n, query position) cells, rank correlation of psi with candidate log-prob (negative = higher psi -> worse recall):
+  P1 (long-memory heads)         r = -0.035 [-0.121, +0.041]  (592 prompts in 48 cells)
+  P1 shuffled within n (null)    r = -0.000 [-0.075, +0.081]  (592 prompts in 48 cells)
+  P1b (all heads)                r = -0.088 [-0.166, -0.003]  (592 prompts in 48 cells)
+  short-memory heads             r = -0.080 [-0.159, -0.001]  (592 prompts in 48 cells)
+  same, outcome = forced-choice correct:
+  P1 (long-memory heads)         r = +0.036 [-0.043, +0.111]
+  P1b (all heads)                r = +0.017 [-0.059, +0.094]

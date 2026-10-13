@@ -1,0 +1,182 @@
+{
+ "arxiv_S1": {
+  "total": 12,
+  "fetched": 12,
+  "truncated": false
+ },
+ "openalex_S1": {
+  "total": 43,
+  "fetched": 43,
+  "truncated": false
+ },
+ "arxiv_S2": {
+  "total": 31,
+  "fetched": 31,
+  "truncated": false
+ },
+ "openalex_S2": {
+  "total": 65,
+  "fetched": 65,
+  "truncated": false
+ },
+ "arxiv_S3": {
+  "total": 26,
+  "fetched": 26,
+  "truncated": false
+ },
+ "openalex_S3": {
+  "total": 44,
+  "fetched": 44,
+  "truncated": false
+ },
+ "arxiv_S4a": {
+  "total": 15,
+  "fetched": 15,
+  "truncated": false
+ },
+ "openalex_S4a": {
+  "total": 6,
+  "fetched": 6,
+  "truncated": false
+ },
+ "arxiv_S4b": {
+  "total": 8,
+  "fetched": 8,
+  "truncated": false
+ },
+ "openalex_S4b": {
+  "total": 8,
+  "fetched": 8,
+  "truncated": false
+ },
+ "arxiv_S5": {
+  "total": 244,
+  "fetched": 244,
+  "truncated": false
+ },
+ "openalex_S5": {
+  "total": 494,
+  "fetched": 494,
+  "truncated": false
+ },
+ "arxiv_S6": {
+  "total": 111,
+  "fetched": 111,
+  "truncated": false
+ },
+ "openalex_S6": {
+  "total": 388,
+  "fetched": 388,
+  "truncated": false
+ },
+ "arxiv_S7": {
+  "total": 18,
+  "fetched": 18,
+  "truncated": false
+ },
+ "openalex_S7": {
+  "total": 56,
+  "fetched": 56,
+  "truncated": false
+ },
+ "arxiv_S8": {
+  "total": 82,
+  "fetched": 82,
+  "truncated": false
+ },
+ "openalex_S8": {
+  "total": 203,
+  "fetched": 203,
+  "truncated": false
+ },
+ "arxiv_S9": {
+  "total": 11,
+  "fetched": 11,
+  "truncated": false
+ },
+ "openalex_S9": {
+  "total": 21,
+  "fetched": 21,
+  "truncated": false
+ },
+ "arxiv_S10": {
+  "total": 1142,
+  "fetched": 1142,
+  "truncated": false
+ },
+ "openalex_S10": {
+  "total": 237,
+  "fetched": 237,
+  "truncated": false
+ },
+ "arxiv_S11": {
+  "total": 64,
+  "fetched": 64,
+  "truncated": false
+ },
+ "openalex_S11": {
+  "total": 232,
+  "fetched": 232,
+  "truncated": false
+ },
+ "arxiv_S12": {
+  "total": 68,
+  "fetched": 68,
+  "truncated": false
+ },
+ "openalex_S12": {
+  "total": 87,
+  "fetched": 87,
+  "truncated": false
+ },
+ "arxiv_S13": {
+  "total": 8,
+  "fetched": 8,
+  "truncated": false
+ },
+ "openalex_S13": {
+  "total": 17,
+  "fetched": 17,
+  "truncated": false
+ },
+ "arxiv_S14": {
+  "total": 83,
+  "fetched": 83,
+  "truncated": false
+ },
+ "openalex_S14": {
+  "total": 193,
+  "fetched": 193,
+  "truncated": false
+ },
+ "arxiv_S15": {
+  "total": 343,
+  "fetched": 343,
+  "truncated": false
+ },
+ "openalex_S15": {
+  "total": 964,
+  "fetched": 964,
+  "truncated": false
+ },
+ "arxiv_S16": {
+  "total": 87,
+  "fetched": 87,
+  "truncated": false
+ },
+ "openalex_S16": {
+  "total": 517,
+  "fetched": 517,
+  "truncated": false
+ },
+ "arxiv_S17": {
+  "total": 25,
+  "fetched": 25,
+  "truncated": false
+ },
+ "openalex_S17": {
+  "total": 158,
+  "fetched": 158,
+  "truncated": false
+ }
+}

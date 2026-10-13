@@ -1,0 +1,297 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{needspace}
+\usepackage{float}
+\makeatletter\setlength\@fpsep{14\p@}\setcounter{topnumber}{3}\renewcommand{\topfraction}{0.9}\renewcommand{\floatpagefraction}{0.7}\makeatother
+\ifdefined\pdfsuppressoptionalinfo\pdfsuppressoptionalinfo=511\fi
+\ifdefined\pdfinfoomitdate\pdfinfoomitdate=1\fi
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+\newcommand{\keywords}[1]{\par\medskip\noindent\textbf{Keywords:} #1}
+\setlength{\parskip}{3pt}
+\emergencystretch=2em
+\hbadness=10000
+\vbadness=10000
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,filecolor=blue]{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage{array}
+\usepackage{enumitem}
+\input{numbers}
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\tr}{\operatorname{tr}}
+
+\title{Key Geometry in Delta-Rule Memory: Exact Interference Laws, a Calibrated Diagnostic, and Pre-Registered Negative Results}
+
+\author{
+  Daniel Huang \\
+  \texttt{daniel@excyst.com} \\
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Delta-rule layers (DeltaNet, Gated DeltaNet, RWKV-7) keep a fast-weight state that later writes overwrite. We offer three things. \emph{Exact laws}: a trace identity that separates the recall error of a window into a key-only factor and a value-dependent gain, with a capacity floor and a bound on the mean gain. \emph{A calibrated diagnostic}: on six trained models the key-only quantity $\psi$ bounds the error of the idealised memory, $\mathrm{RMS}\le r_{90}\psi$, with constants that are stable across text collections and cover \heldCovLo--\heldCovHi\ of the windows of new text, but do not transfer between model families; a gate-aware version tracks the interference measured in the actual recurrence (post hoc; partial within-head rank correlation \gatePartLo--\gatePartHi\ in long-memory heads, against \freePartLo--\freePartHi\ without the gates). \emph{Pre-registered negative results}: the diagnostic does not predict recall of a stored fact beyond the distance to the query in two Gated DeltaNets, nor with gate-aware predictors, nor in a 1.3B model (no gain reaching 0.03 AUC); and a key-decorrelation regulariser that helped over 12 seeds ($p=\mqSF$, $\mqHolm$ Holm-adjusted) did not over 12 new seeds ($p=\repSF$). We draw lessons for evaluating such diagnostics and release validated re-implementations, protocols and data.
+\end{abstract}
+
+\keywords{delta rule; fast weights; state space models; linear attention; associative memory; negative results; pre-registration}
+
+\section{Introduction}
+A state-space or linear-attention layer compresses its past into a fixed-size state. In delta-rule models the state is a matrix $S_t\in\R^{d_v\times d_k}$ that is corrected, token by token, towards the current key--value pair, so a later write can overwrite what an earlier write stored. How much it does so in trained models, and whether anything about it can be predicted from the keys alone, is the question of this paper.
+
+Our contributions, each with the status of its evidence given in Table~\ref{tab:claims} (what is and is not new is discussed in Section~\ref{sec:related}):
+\begin{enumerate}
+  \item \textbf{Exact laws.} The interference identity, the single-pass error operator, and a trace identity $n\,\mathrm{RMS}^2=\tr(MB)$ that splits the window error into a factor computed from the keys ($B$, and the key-only quantity $\psi$) and a value-dependent gain $M$; with a capacity floor and an upper bound on the mean gain (Section~\ref{sec:laws}).
+  \item \textbf{A calibrated, value-free diagnostic with a stated reach.} For the idealised memory built from a layer's own keys and values in six trained models, the bound $\mathrm{RMS}\le r_{90}\psi$, whose constant is stable across five text collections, covers \heldCovLo--\heldCovHi\ of the windows of new sequences, and does not transfer between model families (Section~\ref{sec:measure}).
+  \item \textbf{A gate-aware version that tracks the real recurrence} (post hoc). Run with the model's own decay and write gates and with the values replaced by the keys, it ranks the positions that suffer interference in the actual recurrence of two Gated DeltaNets, over delays up to 512 tokens, where the gate-free quantity does not (Section~\ref{sec:measure}, Appendix~\ref{app:gate}).
+  \item \textbf{A pre-registered test with a negative result, and its stress tests.} The key-only quantity does not predict recall of a stored fact beyond the distance to the query in two Gated DeltaNets; the null survives a flexible age baseline, gate-aware predictors and a 1.3B model, although recall in this format is weak in all three (Section~\ref{sec:task}).
+  \item \textbf{A training-time experiment and its replication.} Key decorrelation looked helpful over twelve seeds and did not replicate over twelve new ones; training of the small model is high-variance (Section~\ref{sec:lever}).
+  \item \textbf{Lessons and artefacts.} Practical guidance for using the diagnostic and four lessons for evaluating such diagnostics (Section~\ref{sec:use}); validated re-implementations, protocols with their deviations, raw results, a documented literature search, and a supplement on continual learning in the weights of small SSMs.
+\end{enumerate}
+\textbf{In short.} The keys alone determine how well a delta-rule memory could recall the keys' own values, up to a constant that depends on the model family, and the same quantity computed with the model's own gates tracks the interference that actually happens in the recurrence. Neither predicts whether the model recalls a stored fact once age and load are controlled, in the three models and the prompts we tested, and the one training-time effect we found did not replicate. What the paper offers is the laws, a diagnostic with a tested reach, and the protocols that produced these negative results.
+
+\textbf{Roadmap.} Section~\ref{sec:laws} defines the memory and states the identities; Section~\ref{sec:measure} measures them on six models and with the real gates; Section~\ref{sec:task} tests the key-only quantity on a downstream task; Section~\ref{sec:lever} reports the training-time experiment and its replication; Section~\ref{sec:related} places the work among related papers; Section~\ref{sec:use} shows how to use the diagnostic and what the negative results teach; Section~\ref{sec:concl} concludes and Section~\ref{sec:limits} lists limitations. The notation is collected in Table~\ref{tab:notation}. Proofs, protocols, per-seed tables, the literature review and the supplement on continual learning in the weights are in the appendix.
+
+\begin{table}[H]
+  \caption{The paper's claims and the status of their evidence.}\label{tab:claims}
+  \centering\scriptsize\setlength{\tabcolsep}{3pt}
+  \begin{tabular}{>{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}p{7.2cm}>{\raggedright\arraybackslash}p{3.4cm}}
+    \toprule
+    claim & evidence & status \\
+    \midrule
+    Exact interference laws, capacity floor and gain bound (Section~\ref{sec:laws}) & proofs; random-instance checks to machine precision; the interference identity holds on real recurrences to a relative residual $\le1.6\times10^{-6}$ & established \\
+    Key-only bound $\mathrm{RMS}\le r_{90}\psi$ for the idealised memory (Section~\ref{sec:measure}) & six models, 10--20 sequences each; coverage \heldCovLo--\heldCovHi\ on \heldSeqLo--\heldSeqHi\ new sequences per model & holds within a family on similar text; constants do not transfer across families \\
+    The gate-aware quantity tracks interference in the real recurrence (Appendix~\ref{app:gate}) & two Gated DeltaNets, 16 sequences each, delays up to 512; partial within-head rank correlation \gatePartLo--\gatePartHi\ (gate-free \freePartLo--\freePartHi, permuted keys \shufPartLo--\shufPartHi) & supported (post hoc) \\
+    The key-only quantity predicts recall of a stored fact (Section~\ref{sec:task}) & pre-registered test on two Gated DeltaNets (criterion failed); flexible age baseline; gate-aware predictors; a 1.3B model (no gain reaching 0.03 AUC) & not supported (null, in a weak-recall regime) \\
+    Key decorrelation makes training more reliable (Section~\ref{sec:lever}) & first twelve seeds $p=\mqSF$ ($\mqHolm$ Holm-adjusted); twelve new seeds $p=\repSF$ & not replicated \\
+    The re-implementations match independent references (Appendix~\ref{app:verify}) & three Gated DeltaNets against the \texttt{transformers} layer (layer error $\le7\times10^{-6}$); RWKV-7 against the authors' NumPy reference ($2.3\times10^{-13}$ in float64) & validated \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[!t]
+  \caption{Notation and terms used in the main text.}\label{tab:notation}
+  \centering\small\setlength{\tabcolsep}{4pt}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.1cm}>{\raggedright\arraybackslash}p{12.2cm}@{}}
+    \toprule
+    symbol or term & meaning \\
+    \midrule
+    $S_t\in\R^{d_v\times d_k}$ & the state (fast-weight matrix) after token $t$; it stores a pair $(k,v)$ as the outer product $vk^\top$ \\
+    $k_t,\ v_t$ & the unit-norm \emph{key} and the \emph{value} written at step $t$; reading with a key $p$ returns $S_tp$ \\
+    $\alpha_t,\ \beta_t$ & decay of the old state and strength of the write at step $t$, both in $(0,1]$ \\
+    $e_t$ & the \emph{surprise}: what the state predicted for $k_t$ minus the value actually written \\
+    $n,\ K,\ V$ & number of items in a window and the matrices of their keys and values (one row each) \\
+    $G=KK^\top$ & key Gram matrix; its off-diagonal entries are the key overlaps $\langle k_i,k_j\rangle$ \\
+    $T$ & the single-pass error operator; it is computed from the keys alone \\
+    $E=TV$, RMS & recall errors after writing the window once from an empty state ($E_i=S_nk_i-v_i$); $\mathrm{RMS}=\|E\|_F/\sqrt n$, the error as a fraction of the value norm ($1$ = no better than storing nothing) \\
+    $\psi_i,\ \psi_{\mathrm{rms}}$ & the same error when each value is replaced by its own key ($v_i=k_i$); a \emph{key-only} quantity \\
+    $M,\ q$ & the relative gain of the values over the keys, and its mean $q=\tr(M)/n$ \\
+    $r_{90}$ & the calibrated constant: the 90th percentile of $\mathrm{RMS}/\psi_{\mathrm{rms}}$ on calibration text \\
+    $r_{\mathrm{eff}}$, $\mu$ & effective rank of a Gram matrix, $(\tr G)^2/\|G\|_F^2$, and key coherence, the largest overlap between two keys \\
+    idealised memory & the one-pass memory above with $\alpha=\beta=1$, built from a layer's own keys and values (a surrogate for the deployed memory) \\
+    long-memory head & a head whose decay gate has a median half-life of at least 256 tokens \\
+    load, age, $P_1$ & number of facts in a prompt; tokens between a fact and the query; the task-level predictor (Section~\ref{sec:task}) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{fig_overview.pdf}
+  \caption{Main results. (a) The interference law: a later write disturbs an earlier association by key overlap $\times$ surprise (analytic product; dashed contours of constant interference). (b) The calibrated key-only bound $\mathrm{RMS}\le r_{90}\psi$: the pooled constant $r_{90}$ in six trained models ($n=32$). (c) The bound's task-level test on two Gated DeltaNets: rank correlation of the key-only quantity with the model's recall of a stored fact (``age'' is the distance in tokens between the fact and the query). When age is modelled only linearly the correlation is negative; once age is held fixed exactly, no detectable association remains (95\% bootstrap intervals).}\label{fig:overview}
+\end{figure}
+
+\section{Exact laws of interference in a delta-rule state}\label{sec:laws}
+The state evolves as $S_t=\alpha_t S_{t-1}(I-\beta_t k_tk_t^\top)+\beta_t v_tk_t^\top$ with unit-norm keys, decay $\alpha_t\in(0,1]$ and write strength $\beta_t\in(0,1]$. The \emph{surprise} is $e_t=\alpha_tS_{t-1}k_t-v_t$.
+
+\begin{lemma}[Interference identity]\label{lem:interf}
+For any probe key $p$, $S_tp=\alpha_tS_{t-1}p-\beta_t\langle k_t,p\rangle\,e_t$.
+\end{lemma}
+\emph{Proof.} Expand $S_tp=\alpha_tS_{t-1}p-\alpha_t\beta_t(S_{t-1}k_t)\langle k_t,p\rangle+\beta_tv_t\langle k_t,p\rangle$ and combine the last two terms. $\square$
+
+\emph{Intuition.} The state stores each pair as the outer product $vk^\top$, and reading with a key $p$ returns $Sp$. A later write whose key overlaps $p$ also changes what the state returns for $p$. The delta rule writes only the \emph{surprise} (what the state failed to predict), so the disturbance is proportional to two things: how much the keys overlap, and how surprising the new value was. Lemma~\ref{lem:interf} makes this exact: a later write therefore disturbs an earlier association by \emph{overlap $\langle k_t,p\rangle$ $\times$ surprise $e_t$}. This is Widrow--Hoff/LMS error correction (and Rescorla--Wagner blocking), and we verified it on the real recurrences of three trained models to a relative residual $\le 1.6\times10^{-6}$ in float32.
+
+Take $\alpha=\beta=1$ and a window of $n$ items with key Gram matrix $G=KK^\top$, $L=\mathrm{tril}(G,-1)$, values $V$. One pass (writing the $n$ pairs once, in order, from the empty state) leaves the error matrix $E=TV$ with $T=L^\top(I+L)^{-1}$, where $E_i=S_nk_i-v_i$ is the error with which item $i$ is recalled. We measure it by $\mathrm{RMS}=\|E\|_F/\sqrt n$; for unit-norm values $\mathrm{RMS}=1$ means the recall is no better than storing nothing. Replacing each value by its own key gives the \emph{key-only} errors $\psi_i=\|(TK)_i\|$ and $\psi_{\mathrm{rms}}=\|TK\|_F/\sqrt n$, which depend on the keys alone. If the keys and values are consistent (some $S^\ast$ fits all pairs) the cumulative surprise obeys $\sum_t\|e_t\|^2\le\|S^\ast\|_F^2=\tr(V^\top G^{-1}V)$ for the minimum-norm $S^\ast$ (a Kaczmarz/Fej\'er argument).
+
+\Needspace{16\baselineskip}
+\begin{theorem}[Trace identity for the window error]\label{thm:gain}
+Assume the keys of the window are linearly independent, so that $G$ is invertible (this needs $n\le d_k$; in the trained models the window Grams are invertible but ill-conditioned, $\lambda_{\min}\approx0.006$--$0.012$ in Gated DeltaNet 1, which affects how informative the bounds are, not the identities). Let $H=VV^\top$, $M=G^{-1/2}HG^{-1/2}$ (the relative gain of the values over the keys), $B=G^{1/2}T^\top TG^{1/2}$, and $\psi_i=\|(TK)_i\|$ the error of the same pass when the values are the keys themselves. Then
+\begin{enumerate}
+  \item $n\cdot\mathrm{RMS}^2=\tr(MB)$;
+  \item $\mathrm{RMS}\le\sqrt{\lambda_{\max}(M)}\,\psi_{\mathrm{rms}}$;
+  \item if $H=g^2G$ (the values' similarity structure is a multiple of the keys') then $\mathrm{RMS}=g\,\psi_{\mathrm{rms}}$ exactly;
+  \item for unit-norm rows the key-energy-weighted mean gain equals 1 whatever the values.
+\end{enumerate}
+\end{theorem}
+\emph{Proof.} (1) $\|TV\|_F^2=\tr(THT^\top)=\tr(BM)$. (2) $\tr(MB)\le\lambda_{\max}(M)\tr B$ for PSD $M,B$. (3) $M=g^2I$. (4) $\sum_j\|u_j^\top V\|^2=\|V\|_F^2=n$. $\square$
+
+The identity is an algebraic consequence of $E=TV$. It separates the recall error into a factor computed from the keys alone ($B$, and $\psi$) and a factor that depends on the values ($M$). That separation has three uses here. If the values' structure is proportional to the keys' (item 3), $\psi$ predicts the error up to a constant; when it is only approximately proportional, as measured in the trained models (Section~\ref{sec:measure}), the relation holds approximately and we report the approximation error. This is the basis of the calibrated bound of Section~\ref{sec:measure}. For unit-norm value rows the error obeys the key-only bound $\mathrm{RMS}\le\|T\|_{\mathrm{op}}$, and the \emph{mean gain} $q=\tr(M)/n$ is bounded by $1/\lambda_{\min}(G)$, with equality attainable when the weakest eigenvector of $G$ is flat (Proposition~\ref{prop:nokey}); for other Gram matrices a sharper key-only bound on $q$ may exist. And a budgeted capacity floor shows what a norm budget and a key spectrum allow a linear memory to store (Theorem~\ref{thm:cap}): the number of value directions that can be recalled depends on the spectrum, the alignment of the values with the keys, the norm budget and the error one tolerates, so we give no single capacity number. We also have the permutation expectation of the mean gain under a random pairing of values to keys, conditional on the values' redundancy $\bar h$ (Appendix~\ref{app:theory}). All identities were checked on random instances to machine precision (Figure~\ref{fig:theory}) and Theorem~\ref{thm:gain}'s algebra and the permutation expectation were verified symbolically.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{fig_theory.pdf}
+  \caption{Numerical checks of the theory (all computed here from random instances). (a) The gain-weighted identity $n\,\mathrm{RMS}^2=\mathrm{tr}(MB)$ against a simulated delta-rule pass. (b) The budgeted capacity floor $\sum_j(1-B\sqrt{\lambda_j})_+^2$ (Theorem~\ref{thm:cap}; red), the memory that attains it (open circles), and the error of one delta-rule pass at its own operator norm (diamond). (c) Coherence alone: the per-item error of a pass (lines, for three overlap levels $\mu$) against the closed form $(1-\mu)^i-(1-\mu)^n$ of Proposition~\ref{prop:coh} (dots).}\label{fig:theory}
+\end{figure}
+
+\section{Measurements on six trained models}\label{sec:measure}
+\textbf{Scope: an idealised memory.} We re-implemented the forward pass of Gated DeltaNet \citep{yang2025gdn} (two checkpoints of 340M and 360M parameters) and RWKV-7 \citep{peng2025rwkv7} 0.1B, ran Qwen3.5-0.8B-Base (delta-rule layers) with its native code, and, as controls, two softmax Transformers. For windows of $n\in\{16,32\}$ (and 64) consecutive tokens we build the \emph{idealised} delta-rule memory ($\alpha=\beta=1$, one pass, unit-norm rows, restarted at every window) from a layer's own keys and values and measure its recall error. This is a property of the keys and values of a layer, not of the deployed model's memory: in particular the Transformers' values were never meant to be stored in a delta-rule state, so their numbers describe how well \emph{those keys and values} could be stored, not how well a Transformer recalls. The one measurement on the actual recurrence (below) is therefore the more direct evidence about forgetting in a deployed model.
+
+\textbf{Validation of the re-implementations.} Plausible perplexity does not establish equivalence, so we compare the Gated DeltaNet re-implementation with an independent reference, the gated-delta-rule layer of the HuggingFace \texttt{transformers} library (chunked kernel, the checkpoint's weights mapped into it), on real text. Layer outputs agree to a relative error below $7\times10^{-6}$ in every layer checked; full-model logits agree to at most $1.7\times10^{-4}$ (logits of scale 3--5), with KL divergence below $10^{-6}$, identical perplexity and 100\% top-1 agreement (Appendix~\ref{app:verify}). The RWKV-7 forward pass is compared in the same way with the NumPy reference in the authors' repository (run unmodified, with the checkpoint's weights mapped to its parameter layout): logits agree to at most $4.5\times10^{-5}$ (logits of scale 14--21) in float32 and $2.3\times10^{-13}$ in float64, with identical top-1 predictions and perplexity; Qwen3.5 and the Transformers use library code.
+
+\textbf{Findings.} (i) Trained keys are not incoherent (the largest overlap between two keys is $\mu\approx0.97$) and have effective rank $r_{\mathrm{eff}}=(\tr G)^2/\|G\|_F^2$ of 7--10 against 51 for random keys, which limits how many value directions a given norm budget can store (Theorem~\ref{thm:cap}). (ii) In the idealised memory, the recall error is 0.3--0.6 of the value norm in the Gated DeltaNets for windows of 16--64 tokens, about 0.8 for RWKV-7 and about 1.0 (no better than storing nothing) for the Transformers' keys and values. (iii) In the \emph{actual} recurrence of Gated DeltaNet~1, in its long-memory heads (heads whose decay gate has a half-life of at least 256 tokens; $\approx$26\% of heads), the deviation of a stored association from pure decay caused by later writes (0.12, 0.23, 0.42 after 16, 64, 256 tokens) is about 3 to 20 times the loss from the designed decay gate (0.006, 0.04, 0.16; Figure~\ref{fig:decay}). (iv) The measured gain profile is close to flat when the value branch has no higher rank than the key branch and shares its dominant eigenspace; Theorem~\ref{thm:gain}(3) then holds only approximately (the exact condition $H=g^2G$ is not met), with $\mathrm{RMS}\approx\sqrt q\,\psi_{\mathrm{rms}}$ within 5--7\% in Gated DeltaNet~1 (Appendix~\ref{app:measure}).
+
+\textbf{A calibrated key-only bound.} Define $r_{90}$ as the 90th percentile of $\mathrm{RMS}/\psi_{\mathrm{rms}}$ on calibration text. Then $\mathrm{RMS}\le r_{90}\,\psi_{\mathrm{rms}}$ is an \emph{empirical prediction bound} computed without values (Figure~\ref{fig:r90}); it is a fitted quantile, not a guarantee. Windows, heads and layers of a sequence are not independent, so we report intervals from a bootstrap over the 10--20 source sequences of each model (Table~\ref{tab:r90}): they are narrow ($\le\pm0.1$), and the pooled constants are 1.5--1.7 for the three delta-rule models and 2.7--3.5 for RWKV-7 and the Transformers. The ratio is stable across the five text collections we used (two to four 1024-token sequences each, so five small local collections, not a test of invariance across domains in general). On \heldSeqLo--\heldSeqHi\ new sequences per model, disjoint from the calibration sequences (a post hoc check; Appendix~\ref{app:measure}), the published constants cover \heldCovLo--\heldCovHi\ of the windows against a nominal 0.90, for all six models and both window sizes. The Gated-DeltaNet constants cover only 0.19--0.31 of RWKV-7 windows and 0.00--0.14 of Transformer windows, so the bound must be recalibrated per family; its level tracks the ratio of the value branch's to the key branch's effective rank \emph{within} a model.
+
+\textbf{A gate-aware key-only quantity (post hoc).} The quantity $\psi$ above assumes $\alpha=\beta=1$, whereas the trained models write with their own gates. We therefore ran the recurrence with the model's real decay and write-strength gates but with the values replaced by the keys, so that it depends on keys and gates alone ($D_{\rm gate}$), and compared it with the interference $D_{\rm act}$ measured in the actual recurrence (the quantity of Figure~\ref{fig:decay}) in every layer and head of both Gated DeltaNets, on sixteen 1024-token sequences and delays up to 512 tokens (Appendix~\ref{app:gate}, Figure~\ref{fig:gate}). Within a head, after removing the decay gate, $D_{\rm gate}$ ranks the positions by interference with a rank correlation of \gatePartLo--\gatePartHi\ in long-memory heads, over all delays and both models; the gate-free quantity gives \freePartLo--\freePartHi, falling to about zero at 512 tokens, and permuting the keys while keeping the gates gives \shufPartLo--\shufPartHi, so the key geometry carries a real share of the signal and the gates the rest. This analysis is post hoc and covers two models of one family; whether the same quantity predicts recall is the question of Section~\ref{sec:task}.
+
+\textbf{Reading Section~\ref{sec:measure}.} The idealised-memory numbers say how well a layer's own keys and values \emph{could} be stored in a one-pass delta-rule memory; the key-only quantity $\psi$ tracks that error up to a constant per model family; and the one actual-recurrence measurement shows that later writes, not the decay gate, dominate what is lost in the long-memory heads of one model. None of this yet says that $\psi$ predicts what a model recalls on a task, which is the question of Section~\ref{sec:task}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{fig_measure.pdf}
+  \caption{The measurement study. (a) Pooled calibrated constant $r_{90}$ by model and window size: the three delta-rule models cluster at 1.5--1.7, RWKV-7 and the two Transformers sit at 2.7--3.5. (b) The level of $r_{90}$ against the ratio of the effective rank of the values to that of the keys (six points: a pattern, not a law).}\label{fig:r90}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics{fig_decay.pdf}
+  \caption{Interference against designed decay in the \emph{actual} recurrence of Gated DeltaNet~1 (long-memory heads, real $\alpha_t$, $\beta_t$ and values): relative loss of a stored association after 16, 64 and 256 tokens. The measured deviation from pure decay is about 3 to 20 times the loss from the decay gate.}\label{fig:decay}
+\end{figure}
+
+\section{A pre-registered task-level test}\label{sec:task}
+\textbf{Question.} Does the same key-only quantity, computed from the model's own keys on a prompt, predict whether the \emph{model} recalls a stored fact on a downstream task, beyond simple baselines? The expectation was simple: if $\psi$ is large for a fact, the idealised memory would find it hard to store, so the model should recall it less often. The protocol was written before any bound was computed (Appendix~\ref{app:task}).
+
+\textbf{Task.} Each prompt lists $n\in\{4,8,16,24\}$ facts ``$\langle$Key$\rangle$ is $\langle$value$\rangle$.'' (single-token names and common words, all distinct) and queries one; 150 prompts per load, 600 per model, on Gated DeltaNet 340M (primary) and 360M (replication). Strict top-1 over the vocabulary is dominated by the format prior, so the outcome is \emph{forced-choice recall} (the true value ranked first among the $n$ stated values; chance $1/n$), a change recorded after an accuracy-only pilot and before any bound was computed. The predictor $P_1$ is $\psi_i=\|(TK)_i\|$ averaged over the queried fact's three tokens and over the long-memory heads (median decay half-life $\ge256$ tokens on calibration prompts: 21/96 and 20/84 heads). Prompts are split 50/50 by prompt.
+
+\textbf{Pre-registered criterion (H1).} Adding $P_1$ to age (tokens between the fact and the query) and load raises test AUC by $\ge0.03$ with a bootstrap interval excluding 0, on the primary model and replicated in the second.
+
+\begin{table}[t]
+  \caption{Task-level test. Forced-choice accuracy at $n=4/8/16/24$ (chance $.25/.125/.06/.04$), test AUC of the pre-registered baseline B3 (age and one-hot load) with and without $P_1$, and the pre-registered comparison $\Delta$ with its 95\% bootstrap interval.}\label{tab:task}
+  \centering\small\setlength{\tabcolsep}{4pt}
+  \input{tab_task}
+\end{table}
+
+\textbf{Verdict.} The pre-registered claim is \emph{not confirmed}: the primary model fails and the replication passes only in the pooled test. \textbf{Exploratory follow-up (post hoc).} Within a load, $P_1$ correlates 0.87--0.98 with age ($\psi$ is larger for facts written earlier). Age is a deterministic function of the queried position for a given load, so prompts with the same load \emph{and} the same queried position (48 cells) have identical age. Within those cells the rank correlation of $P_1$ with the true value's log-probability among the candidates is $-0.035$ ($-0.121,+0.041$) for the 340M model and $-0.030$ ($-0.108,+0.049$) for the 360M model, against shuffled-$\psi$ nulls of $0.000$ and $-0.005$ (Figure~\ref{fig:task}). The pooled gain in the 360M model is therefore explained by the pre-registered baseline modelling age only linearly. In this setting we find no detectable incremental association between the key-only quantity and recall beyond the distance to the query. What the three analyses exclude is different and we keep it apart. (a) Under exact age control the within-cell rank correlations exclude $|\rho|$ beyond about $0.12$. (b) The pre-registered pooled comparison (age modelled linearly) gives a primary-model gain of $0.000$ with interval $(-0.041,+0.038)$, excluding gains above about $0.04$ AUC in that model; the replication's pooled gain of $+0.118$ is explained by the linear age baseline. (c) A post-hoc held-out comparison with a flexible categorical age adjustment (a fixed effect for every (load, queried position) cell, fitted on the calibration prompts; Appendix~\ref{app:task}) gives a gain of $\flexDa$ ($\flexLoa$, $\flexHia$) in the 340M model and $\flexDb$ ($\flexLob$, $\flexHib$) in the 360M model; the upper endpoints of these intervals are below $0.02$ and $0.01$ AUC for these fitted comparisons (Table~\ref{tab:taskresults}). The intervals come from resampling test prompts with the fitted models held fixed, so they do not exclude other predictors, interactions or fitting procedures, nor smaller effects, other prompt formats, longer contexts or other models.
+
+\begin{table}[ht]
+  \caption{Task-level results side by side (95\% bootstrap intervals). $\Delta$AUC is the held-out AUC gain from adding $P_1$: the pre-registered comparison models age linearly; the categorical-age comparison (a fixed effect for every load and queried position) and the within-cell rank correlation are post hoc.}\label{tab:taskresults}
+  \centering\setlength{\tabcolsep}{5pt}
+  \input{tab_taskresults}
+\end{table}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{fig_task.pdf}
+  \caption{Task-level test. (a) Forced-choice recall against load for the two Gated-DeltaNet models (bands: 95\% Wilson intervals; chance dashed). (b) Test AUC of the pre-registered baseline B3 with $P_1$ and with a shuffled $P_1$ (error bars: bootstrap 95\% intervals); $\Delta$AUC is the pre-registered comparison. (c) Rank correlation of $P_1$ with the true value's log-probability among the candidates: the estimates that control age only linearly are significantly negative, with age and load fixed exactly (within-cell) they are indistinguishable from 0, and a shuffled $P_1$ gives the null in both settings (95\% intervals).}\label{fig:task}
+\end{figure}
+
+\textbf{Caveats.} Small models with weak recall (forced-choice accuracy 0.17--0.46); prompts of at most about 100 tokens, shorter than the state ($d_k=256$) can saturate, so interference may not be the binding constraint; $\psi$ uses $\alpha=\beta=1$ and a whole-prefix window beyond the 16--64-token calibration range; one prompt format. A gate-aware predictor, tested post hoc (Appendix~\ref{app:gatetask}), adds no detectable information either: its gain over the flexible age baseline is $\gFlexDa$ ($\gFlexLoa$, $\gFlexHia$) in the 340M model and $\gFlexDb$ ($\gFlexLob$, $\gFlexHib$) in the 360M model. A larger model (1.3B, post hoc extension under a protocol fixed beforehand; Appendix~\ref{app:scale}) recalls no better in this format (forced-choice accuracy \scAccFour, \scAccEight, \scAccSixteen, \scAccTwentyFour\ at $n=4,8,16,24$) and again gives no gain above the criterion: $P_1$ and $P_{1g}$ add $\scGfreeFlexD$ ($\scGfreeFlexLo$, $\scGfreeFlexHi$) and $\scGawareFlexD$ ($\scGawareFlexLo$, $\scGawareFlexHi$) AUC over the flexible age baseline; by the verdict rule fixed in advance the outcome is ``mixed'' because one gate-aware within-cell interval narrowly excludes zero, in the direction opposite to the hypothesis. Longer contexts and models with stronger recall were not tested. A first analysis run was invalid because the extraction stored mean log-decay rather than the median half-life the protocol specifies; the head groups were then computed from calibration prompts only, and this is logged as a deviation.
+
+\section{A training-time experiment and its replication}\label{sec:lever}
+\textbf{Motivation.} The theory says the error depends on the key geometry, in particular on how many independent key directions there are (the effective rank). A regulariser that spreads the keys out should therefore help, and this experiment checks it in a small trained model.
+
+\textbf{Task.} Multi-query associative recall with distractors: a sequence has $n$ (key, value) token pairs, then $L$ filler tokens, then the $n$ keys again in random order, and the model must output each key's value. Training uses $n\in[4,32]$, $L\in[0,96]$; evaluation $n\in\{8,16,24,32\}$, $L\in\{0,32,96\}$. The task is load-sensitive and, over the distractor lengths tested, insensitive to distractor length: across the \mqNLearned\ of \mqNRuns\ runs whose mean recall exceeds 0.5, accuracy at $L=0$ and $L=96$ differs by at most \mqMaxGap, while accuracy falls with $n$, the number of items competing for the state (this does not isolate capacity from other limits).
+
+\textbf{Model and regularisers.} A 113k-parameter two-layer gated delta-rule model (2 heads, $d_k=d_v=32$; chunked reference implementation, checked against a step-by-step loop to $7\times10^{-8}$), AdamW, 3000 steps. Three \emph{task-agnostic} regularisers computed from the layer's own keys and values on the first 16 positions of every sequence, chosen from the theory before any run with one untuned weight each: \emph{key decorrelation} (penalise the mean squared off-diagonal key cosine, raising the keys' effective rank), \emph{Gram matching} (push the relative gain towards 1, $M\to I$) and \emph{rank matching} (penalise value rank above key rank).
+
+\begin{table}[t]
+  \caption{Mean recall accuracy (over $L$) by $n$; seeds 0--11, twelve for each of the four learners.}\label{tab:lever}
+  \centering\small\setlength{\tabcolsep}{4pt}
+  \input{tab_lever}
+\end{table}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{fig_lever.pdf}
+  \caption{The training-time lever, first twelve seeds. (a) Recall against the number of stored pairs for the four learners (number of seeds in brackets). (b) Paired seeds: baseline against key decorrelation (red lines: the \mqFailBase\ baseline seeds below 0.9 mean recall; black: mean). (c) Fraction of runs whose training cross-entropy has left the chance plateau (below 2) by each step: key decorrelation leaves it by step 1000 in 12 of 12 runs, the baseline in 6 of 12.}\label{fig:lever}
+\end{figure}
+
+\textbf{Results, seeds 0--11.} Key decorrelation versus baseline (same seed): mean paired difference $\mqDiff$ (bootstrap 95\% CI $[\mqCiLo,\mqCiHi]$), \mqHigher\ of \mqN\ seeds higher, exact sign-flip $p=\mqSF$, exact Wilcoxon $p=\mqWil$; three regularisers were compared, and after a Holm correction over them the sign-flip $p$ for decorrelation is $\mqHolm$. The effect was carried by the baseline's failures to learn: \mqFailBase\ of the \mqN\ baseline seeds stayed below 0.9 mean recall, against \mqFailDec\ decorrelated runs (Fisher $p=\mqFisher$); their gains are \mqFailGains, and in the other \mqNRest\ seeds the gain is $\mqGainRest$. Decorrelated runs leave the chance plateau by step 1000 in 12/12 runs (baseline 6/12). The geometric account of these seeds (Appendix~\ref{app:lever}): the baseline's second layer collapses to a key rank of 2.0 with a non-flat gain ($q=14.9$, $\mathrm{RMS}/\psi=2.16$), the regime of RWKV-7 and the Transformers in Section~\ref{sec:measure}; decorrelation holds that layer's key rank at 11.5 ($q=1.39$). Gram matching drives $\mathrm{RMS}/\psi$ to \gramRmsLo--\gramRmsHi\ without helping, by shrinking both ranks to \gramRankLo--\gramRankHi: a flat gain is cheap to obtain by collapse, and informative only when the ranks are healthy.
+
+\textbf{Replication, seeds 12--23.} We then ran twelve new seeds of the baseline and of key decorrelation with the identical configuration, under a protocol fixed beforehand (Appendix~\ref{app:leverrep}), and completed Gram matching and rank matching to twelve seeds each. \textbf{The effect did not replicate}: the paired difference is $\repDiff$ ($[\repCiLo,\repCiHi]$), \repHigher\ of 12 seeds higher, exact sign-flip $p=\repSF$, Wilcoxon $p=\repWil$; mean recall is \repBaseMean\ for the baseline and \repDecMean\ for decorrelation, and \repFailBase\ baseline and \repFailDec\ decorrelated runs stayed below 0.9. Pooled over all 24 seeds the difference is $\poolDiff$ ($[\poolCiLo,\poolCiHi]$, $p=\poolSF$), with \poolFailBase\ baseline and \poolFailDec\ decorrelated runs below 0.9 of 24 (Fisher $p=\poolFisher$). Whether a run learns depends on the seed at least as much as on the regulariser. Decorrelation does what it is designed to do, raising the layer-1 key effective rank (median \mqNewKeyDec\ against \mqNewKeyBase\ in the new runs), but accuracy no longer tracks the key rank there (Spearman $\mqNewSp$ over the 24 new runs, against $\mqSpKey$ over the 48 runs of seeds 0--11). With twelve seeds each, Gram matching and rank matching differ from the baseline by $\matchDiff$ ($p=\matchSF$) and $\rankDiff$ ($p=\rankSF$): no detectable effect, so the earlier impression that they were worse, from six and three seeds, is not supported. We conclude that the evidence does not establish that key decorrelation makes training of this model more reliable. \textbf{Caveats:} one task, one small model, one untuned weight per regulariser; training in this setting is high-variance (\poolFailBase\ of 24 baseline runs stay below 0.9 mean recall).
+
+\section{Related work and what is new}\label{sec:related}
+We ran a systematic search (arXiv and OpenAlex; 17 pre-specified search strings, two post-hoc amendments, citation chasing; 4{,}017 + 2{,}094 records retrieved, 327 included; protocol and data released; end-to-end recall 76\% on a 33-paper reference set; two databases only, one automated reviewer, mostly abstract-level screening; Appendix~\ref{app:review}). The nearest prior work for each claim:
+\begin{itemize}
+  \item \textbf{Delta-rule law and capacity.} The update is Widrow--Hoff/LMS and Rescorla--Wagner error correction \citep{widrow1960adaptive,rescorla1972theory}; delta-rule capacity was studied analytically in 1989 \citep{prados1989capacity}; recent work derives delta-rule steps from online regression and Kaczmarz projection \citep{wang2025testtime,liu2025longhorn}, treats DeltaNet as test-time regression \citep{yang2024deltanet,yang2025gdn,sun2024ttt,behrouz2025titans} and analyses interference in fixed-state recurrences. Our Lemma~\ref{lem:interf} is a restatement.
+  \item \textbf{Zero-interference update, memory and frontier (supplement).} (Used only in the supplement.) The update of Theorem~\ref{thm:frontier}(a) is ORFit \citep{min2022orfit}, which also truncates the stored basis by PCA; Grassmannian packing gives memory lower bounds for streaming regression \citep{dagan2019space}; covering numbers are classical \citep{szarek1998metric,pajor1998metric}; Pareto and stability/plasticity analyses of projection methods exist \citep{zhao2023rethinking}; \citet{chen2022memory} and \citet{knoblauch2020optimal} give memory lower bounds for general learners.
+  \item \textbf{Projection and SSM continual learning.} Projection methods restrict each update to the complement of a stored subspace of old gradients or activations: GPM \citep{saha2021gradient}, OGD \citep{farajtabar2020orthogonal}, Adam-NSCL \citep{wang2021training}, Mamba-CL \citep{cheng2024mamba} and Inf-SSM \citep{lee2025exemplar}; our layerwise argument is theirs with a frozen recurrence.
+  \item \textbf{Closest empirical work (full text read).} \citet{lee2026how} apply causal interventions (state and write swaps, write-key alignment) to pretrained GLA and Gated DeltaNet models up to 1.3B and to hybrids, on the actual recurrence, and find that distractor writes aligned with a target key lower its margin and that load costs far more than distance; they report no separation of key geometry from value gain, no calibrated bound and no predictor of recall. \citet{boesch2026anatomy} study matched-state recurrences at toy scale (one layer, $d=32$), report that failures to learn are seed-dependent (``lock-in'' rates) and that a distance curriculum raises them from 1/10 to 7/10; they measure behaviour only, not the state. Our interference measurement is convergent with the first and our training result with the second; neither overlaps with the trace-identity separation, the calibration across six models or the pre-registered downstream test.
+  \item \textbf{Forgetting theory in linear models.} \citet{evron2022catastrophic} and follow-ups; \citet{lin2023theory}.
+\end{itemize}
+\textbf{What we found no counterpart for} (at abstract level, plus the full text of the two papers above) is the separation of key geometry from value gain used as a measurement tool: the idealised-memory measurements and the calibrated key-only bound with its transfer limits across six models; the discrepancy between the bound's predictiveness for the idealised memory and its absence of detectable incremental association with downstream recall after adjusting for age; and the negative and comparative results on small diagonal SSMs. The interference measurement in the actual recurrence and the seed-dependence of training failures have close counterparts (above); the trace identity is a short algebraic consequence of the single-pass error operator and we claim it only for its use here.
+
+\section{Using the diagnostic, and lessons from the negative results}\label{sec:use}
+\subsection{Using the diagnostic}
+\textbf{A recipe.} (1) For a layer and a window of $n$ tokens, take the unit-normalised keys and form the Gram matrix $G$; its effective rank $r_{\rm eff}$ and its conditioning $\lambda_{\min}(G)$ say how many value directions the keys can hold (Theorem~\ref{thm:cap}; Table~\ref{tab:notation}). (2) Compute $\psi$ with one triangular solve ($T=L^\top(I+L)^{-1}$; the code is in \texttt{flatlib.py} of the repository). (3) Read the bound $\mathrm{RMS}\le r_{90}\psi$ with the constant of the model's family (1.5--1.7 for the delta-rule models, 2.7--3.5 for RWKV-7 and the Transformers) and recalibrate it on a few sequences for a new family; on new text from the same sources the published constants cover \heldCovLo--\heldCovHi\ of the windows. (4) Check the regime: the ratio of the values' to the keys' effective rank orders the models by the level of the constant (Section~\ref{sec:measure}). (5) To describe interference in a deployed model, run the recurrence with the real gates and the values replaced by the keys ($D_{\rm gate}$, Appendix~\ref{app:gate}); within a head, after removing the decay gate, it ranks the positions by interference with a rank correlation of \gatePartLo--\gatePartHi. (6) Do not read any of these as a predictor of recall: in the regimes we tested, none is one (Section~\ref{sec:task}).
+
+\begin{table}[H]
+  \caption{What the diagnostic can and cannot tell you, as tested here.}\label{tab:use}
+  \centering\scriptsize\setlength{\tabcolsep}{4pt}
+  \begin{tabular}{>{\raggedright\arraybackslash}p{7.6cm}>{\raggedright\arraybackslash}p{7.6cm}}
+    \toprule
+    can & cannot \\
+    \midrule
+    bound the idealised memory's error from the keys alone, with a family-calibrated constant & predict whether a model recalls a stored fact beyond age and load \\
+    flag key-rank collapse and ill-conditioned windows & certify anything across model families without recalibration \\
+    compare key geometry across layers, heads and models & show that decorrelating keys makes training more reliable \\
+    rank the positions that suffer interference within a head, using the real gates (gate-aware version) & say anything about Transformer recall (the Transformer numbers describe key geometry only) \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Lessons from the negative results}
+\textbf{Control the confound exactly.} In the pre-registered test the age of a fact (tokens between the fact and the query) is nearly collinear with $P_1$ (rank correlation 0.87--0.98 within a load). A pooled gain of $+0.118$ AUC in the 360M model, over a baseline that modelled age only linearly, disappeared ($\flexDb$) once age was controlled exactly with a fixed effect for every (load, queried position) cell.
+
+\textbf{Report null controls and their spread.} In the 1.3B model the shuffled predictors give within-cell correlations of $\scGfreeshIn$ and $\scGawareshIn$ with intervals that exclude zero, and six of the 24 intervals in that table exclude zero; one interval that excludes zero is weak evidence when a table holds dozens that are uncorrected.
+
+\textbf{Replicate before believing, and correct for multiplicity.} The key-decorrelation gain over twelve seeds ($p=\mqSF$) is $\mqHolm$ after a Holm correction over the three regularisers tested, and it did not replicate over twelve new seeds ($p=\repSF$). Training of the small model is high-variance (\poolFailBase\ of 24 baseline runs stay below 0.9 mean recall), so a dozen seeds can mislead.
+
+\textbf{Say which memory is measured.} Results for the idealised memory do not transfer to the deployed recurrence without the gates: the gate-free quantity's correlation with the interference in the actual recurrence falls to about zero at delays of 512 tokens, while the gate-aware one keeps \gatePartLo--\gatePartHi. Pre-registration made these nulls interpretable: the criteria, the analyses and the deviations, including an implementation error that was found and logged, were fixed or recorded beforehand.
+
+\section{Conclusion}\label{sec:concl}
+In a delta-rule memory a later write disturbs an earlier association in proportion to key overlap times surprise, and the error of a one-pass memory splits into a part set by the keys and a part set by how the values align with them. This paper offers exact laws for that split; a calibrated, value-free diagnostic, with constants of 1.5--1.7 for the delta-rule models and 2.7--3.5 for RWKV-7 and the two Transformers, stable across five text collections and covering \heldCovLo--\heldCovHi\ of the windows of new text but not transferable between families; and a gate-aware version that tracks the interference measured in the actual recurrence of two Gated DeltaNets. It also reports what the diagnostic does not do. In a pre-registered test on two Gated DeltaNets it did not predict recall of a stored fact once the distance to the query was accounted for, and neither did gate-aware predictors or a 1.3B model, tested under a protocol fixed beforehand, although recall in this format is weak in all three; and a key-decorrelation regulariser that improved a small model's training over a first set of seeds did not do so over twelve new ones. We read this as: key geometry is a useful measurement tool for what a delta-rule memory could store and how it is overwritten, not yet a predictor of what a model recalls. Whether it becomes one in longer contexts or in models with stronger recall is the open question.
+
+\section{Limitations}\label{sec:limits}
+\begin{enumerate}
+  \item The measurement study analyses an \emph{idealised} one-pass memory ($\alpha=\beta=1$, unit-norm rows, windows of at most 64 tokens), not the deployed model's memory; the Transformer numbers say nothing about Transformer recall. The actual recurrence is measured in two models of one family (Figure~\ref{fig:decay}; the gate-aware analysis of Appendix~\ref{app:gate} is post hoc, on 1024-token sequences from two domains); the gate-aware task-level analysis uses prompts of at most about 100 tokens, so its reach to longer contexts is untested.
+  \item The calibrated bound is empirical: a fitted 90th percentile from 10--20 sequences per model, with five small local text collections, not a guarantee and not evidence of invariance across domains. It does not carry over between families. On \heldSeqLo--\heldSeqHi\ new sequences per model its published constants cover \heldCovLo--\heldCovHi\ of the windows (Appendix~\ref{app:measure}), which supports stability within a family on similar local text, not invariance across domains.
+  \item The task-level test (Section~\ref{sec:task}) is a null result in one setting: three Gated DeltaNets (340M to 1.3B) with weak recall and short prompts. It does not show that the key-only quantity carries no information in general, and the flexible-age and gate-aware comparisons are post hoc.
+  \item The capacity statements are floors for linear memories at a stated norm budget and error tolerance; low effective rank alone does not fix a capacity.
+  \item The training-time lever (Section~\ref{sec:lever}) is one task and one small model; its effect in the first twelve seeds (uncorrected $p=\mqSF$, Holm-adjusted $\mqHolm$) did not replicate in twelve new seeds.
+  \item Six checkpoints (three of one family). The Gated DeltaNet re-implementations are validated against an independent reference layer (not the original authors' kernels); the RWKV-7 re-implementation against the NumPy reference in the authors' repository (neither against the authors' GPU kernels).
+  \item The weight-space experiments (supplement) use small real-diagonal SSMs, synthetic and MNIST streams, five seeds and one optimiser; they are not a ranking of published methods.
+  \item The literature search is systematic but not exhaustive; the amendments were made after seeing results.
+\end{enumerate}
+
+\section*{Reproducibility}
+Code, protocols (including the pre-registration of Section~\ref{sec:task} with its deviations), raw results, the validation scripts and the literature-review data are in the accompanying repository, \url{https://github.com/excyst-cerebral/delta-rule-key-geometry}. Model checkpoints were obtained from the Hugging Face Hub; no repository code from the checkpoints was executed.
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\appendix
+\input{appendix}
+
+\end{document}

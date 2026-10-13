@@ -1,0 +1,12 @@
+\begin{tabular}{lcccc}
+\toprule
+model & sequences & pooled $r_{90}$ ($n=16$ / $n=32$) & rank ratio & trained $\mathrm{RMS}/\psi$ \\
+\midrule
+Gated DeltaNet 1 & 20 & 1.53 [1.50, 1.56] / 1.60 [1.58, 1.62] & 0.55 & 1.07 \\
+Gated DeltaNet 2 & 20 & 1.49 [1.47, 1.50] / 1.57 [1.55, 1.59] & 0.85 & 1.21 \\
+Qwen3.5-0.8B & 10 & 1.47 [1.46, 1.49] / 1.63 [1.61, 1.65] & 0.47 & 0.82--1.02 \\
+RWKV-7 0.1B & 10 & \textbf{2.67 [2.61, 2.72] / 2.88 [2.82, 2.92]} & \textbf{2.2} & \textbf{1.93} \\
+Qwen2.5-1.5B & 15 & 3.44 [3.38, 3.53] / 3.52 [3.44, 3.60] & 5.5 & 1.95 \\
+SmolLM2-135M & 15 & 3.14 [3.08, 3.20] / 3.28 [3.21, 3.35] & 6.4 & 2.45 \\
+\bottomrule
+\end{tabular}

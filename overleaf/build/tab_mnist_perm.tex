@@ -1,0 +1,13 @@
+\begin{tabular}{lcccc}
+\toprule
+learner & final avg & forgetting & last task & bits \\
+\midrule
+fine-tuning & .185$\pm$.006 & .702$\pm$.007 & .810$\pm$.006 & 0 \\
+EWC $\lambda=10/100/1000$ & .248/.223/.168 & .118/.032/.050 & .177/.192/.111 & 2.50\,M \\
+layerwise, free, $\rho=0.95/0.99$ & .177/.183 & .569/.505 & .580/.554 & 95\,763/96\,608 \\
+layerwise, frozen, $\rho=0.95/0.99/0.999$ & .236/.274/.247 & .370/.110/.017 & .353/.176/.150 & 80\,557/92\,595/96\,608 \\
+OGD $\rho=0.9/0.99$ & .214/.210 & .687/.697 & .834/.831 & 29.3\,M/67.2\,M \\
+replay $k=20/200$ & .315/.496 & .532/.298 & .752/.726 & 1.26\,M/12.6\,M \\
+joint training & \multicolumn{4}{c}{.614$\pm$.009} \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,1 @@
+MNIST is public data and is not redistributed here. Place the four original files `train-images-idx3-ubyte.gz`, `train-labels-idx1-ubyte.gz`, `t10k-images-idx3-ubyte.gz`, `t10k-labels-idx1-ubyte.gz` in this directory (the scripts in `exp_bench/` read them from here).

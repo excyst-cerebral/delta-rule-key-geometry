@@ -1,0 +1,157 @@
+{
+ "Kaczmarz Linear Attention": {
+  "authors": [
+   "Jiaxuan Zou",
+   "Ruifeng Ren",
+   "Yong Liu"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2605.08587",
+  "venue": "arXiv (Cornell University)"
+ },
+ "SketchOGD: Memory-Efficient Continual Learning": {
+  "authors": [
+   "Youngjae Min",
+   "Benjamin Wright",
+   "Jeremy Bernstein",
+   "Navid Azizan"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.1109/tsp.2026.3695343",
+  "venue": "IEEE Transactions on Signal Processing"
+ },
+ "Towards guarantees for parameter isolation in continual learning": {
+  "authors": [
+   "Giulia Lanzillotta",
+   "Sidak Pal Singh",
+   "Benjamin F. Grewe",
+   "Thomas Frank Hofmann"
+  ],
+  "year": 2023,
+  "doi": "https://doi.org/10.48550/arxiv.2310.01165",
+  "venue": "arXiv (Cornell University)"
+ },
+ "Replay Can Provably Increase Forgetting": {
+  "authors": [
+   "Yasaman Mahdaviyeh",
+   "James Lucas",
+   "Mengye Ren",
+   "Andreas Savas Tolias",
+   "Richard S. Zemel",
+   "Toniann Pitassi"
+  ],
+  "year": 2025,
+  "doi": "https://doi.org/10.48550/arxiv.2506.04377",
+  "venue": "arXiv (Cornell University)"
+ },
+ "How Linear Attention Remembers": {
+  "authors": [
+   "Kichang Lee",
+   "J. Park",
+   "Songkuk Kim",
+   "JeongGil Ko"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2609.33093",
+  "venue": "arXiv (Cornell University)"
+ },
+ "On State Reduction in Linear Attention": {
+  "authors": [
+   "Philipp Nazari",
+   "T. Konstantin Rusch"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2602.04852",
+  "venue": "arXiv (Cornell University)"
+ },
+ "Anatomy of Associative Recall in Fixed-State Recurrences": {
+  "authors": [
+   "Julian Boesch",
+   "Andrew Wee"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2609.16183",
+  "venue": "arXiv (Cornell University)"
+ },
+ "A Hippocampus for Linear Attention": {
+  "authors": [
+   "Wanyun Cui"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2607.02303",
+  "venue": "arXiv (Cornell University)"
+ },
+ "Learning to Remember, Learn, and Forget in Attention-Based Models": {
+  "authors": [
+   "Djohan Bonnet",
+   "Jamie Lohoff",
+   "Jan Finkbeiner",
+   "Elidona Skhikerujah",
+   "Emre Neftci"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2602.09075",
+  "venue": "arXiv (Cornell University)"
+ },
+ "Fast Weight Attention for Continual Learning": {
+  "authors": [
+   "Yifan Zhang",
+   "Steve Ta",
+   "Jasper Zhang",
+   "Jichen Feng",
+   "Shuzhen Li",
+   "Yongxin Zhang"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2608.27763",
+  "venue": "arXiv (Cornell University)"
+ },
+ "Provable Continual Learning via Sketched Jacobian Approximations": {
+  "authors": [
+   "Reinhard Heckel"
+  ],
+  "year": 2021,
+  "doi": "https://doi.org/10.48550/arxiv.2112.05095",
+  "venue": "arXiv (Cornell University)"
+ },
+ "Neural network capacity using delta rule": {
+  "authors": [
+   "D.L. Prados",
+   "Subhash C. Kak"
+  ],
+  "year": 1989,
+  "doi": "https://doi.org/10.1049/el:19890142",
+  "venue": "Electronics Letters"
+ },
+ "Space lower bounds for linear prediction in the streaming model": {
+  "authors": [
+   "Yuval Dagan",
+   "Gil Kur",
+   "Ohad Shamir"
+  ],
+  "year": 2019,
+  "doi": "https://doi.org/10.48550/arxiv.1902.03498",
+  "venue": "arXiv (Cornell University)"
+ },
+ "Operator-Specific Forgetting in Matrix-Valued Associative Memory": {
+  "authors": [
+   "Escobar, Javier"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.5281/zenodo.22063120",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)"
+ },
+ "State Rank Dynamics in Linear Attention LLMs": {
+  "authors": [
+   "Ao Sun",
+   "Hongtao Zhang",
+   "Heng Zhou",
+   "Yixuan Ma",
+   "Yiran Qin",
+   "Tongrui Su"
+  ],
+  "year": 2026,
+  "doi": "https://doi.org/10.48550/arxiv.2602.02195",
+  "venue": "arXiv (Cornell University)"
+ }
+}

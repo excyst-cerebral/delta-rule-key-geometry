@@ -1,0 +1,7555 @@
+[
+ {
+  "set": "main",
+  "idx": 3,
+  "title": "Exemplar-Free Continual Learning for State Space Models",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2505.18604",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7,C8",
+  "note": "Inf-SSM.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S1",
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 4,
+  "title": "Ancestral Mamba: Enhancing Selective Discriminant Space Model with Online Visual Prototype Learning for Efficient and Robust Discriminant Approach",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2503.22729",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S1",
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 5,
+  "title": "Enhancing Online Continual Learning with Plug-and-Play State Space Model and Class-Conditional Mixture of Discretization",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2412.18177",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 6,
+  "title": "Learning Mamba as a Continual Learner: Meta-Learning Selective State Space Models for Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2412.00776",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7,C8",
+  "note": "MambaCL (meta-learned).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S1",
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 7,
+  "title": "Mamba-CL: Optimizing Selective State Space Model in Null Space for Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2411.15469",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7,C8",
+  "note": "Mamba-CL.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S1",
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 8,
+  "title": "Mamba-FSCIL: Dynamic Adaptation with Selective State Space Model for Few-Shot Class-Incremental Learning",
+  "year": 2024,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "arxiv": "2407.06136",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 9,
+  "title": "Uncovering Selective State Space Model's Capabilities in Lifelong Sequential Recommendation",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2403.16371",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 10,
+  "title": "Regularization-Based Efficient Continual Learning in Deep State-Space Models",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2403.10123",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7,C8",
+  "note": "Regularisation-based continual learning in deep state-space models (system identification).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S1",
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 30,
+  "title": "A Dynamical Theory of LoRA in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.39367",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 31,
+  "title": "Continual Learning of Dynamical Systems in Recurrent Neural Networks through Recyclable Unit Gating",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.38356",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 36,
+  "title": "Neural Succession: A Mesoscopic Theory of Invasion, Coexistence, and Stabilization in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2609.36375",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E2",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 37,
+  "title": "SPACE-LoRA: Allocating Activation-Subspace Protection for Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.34453",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 39,
+  "title": "Muon Can Outperform Dedicated Continual Learning Methods",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2609.24678",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 49,
+  "title": "Continual Learning Mechanisms Compose for Long-Horizon Memorization",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2609.06986",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 76,
+  "title": "When Does Continual Learning Require Learning",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2607.07847",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 80,
+  "title": "The Forgetting-Retention Dilemma: Certified Unlearning Theory in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2606.29832",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 86,
+  "title": "Dimensionality Controls When Modularity Helps in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.17889",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 93,
+  "title": "Theoretical Foundations of Continual Learning via Drift-Plus-Penalty",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.08452",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 100,
+  "title": "TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2606.06494",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 107,
+  "title": "Continual Learning as a Multiphase Moving-Boundary Problem",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2606.01863",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E2",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 111,
+  "title": "Understanding Generalization and Forgetting in In-Context Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.28705",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 126,
+  "title": "Octopus: History-Free Gradient Orthogonalization for Continual Learning in Multimodal Large Language Models",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2605.14938",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 132,
+  "title": "Why Zeroth-Order Adaptation May Forget Less: A Randomized Shaping Theory",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.10658",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 135,
+  "title": "Muon-OGD: Muon-based Spectral Orthogonal Gradient Projection for LLM Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.08949",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 148,
+  "title": "When Does Structure Matter in Continual Learning? Dimensionality Controls When Modularity Shapes Representational Geometry",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2604.27656",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 152,
+  "title": "Hidden Failure Modes of Gradient Modification under Adam in Continual Learning, and Adaptive Decoupled Moment Routing as a Repair",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2604.22407",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 180,
+  "title": "On Catastrophic Forgetting in Low-Rank Decomposition-Based Parameter-Efficient Fine-Tuning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2603.09684",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 194,
+  "title": "Learning in the Null Space: Small Singular Values for Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.21919",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 195,
+  "title": "Exploring the Impact of Parameter Update Magnitude on Forgetting and Generalization of Continual Learning",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2602.20796",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 196,
+  "title": "Understanding the Role of Rehearsal Scale in Continual Learning under Varying Model Capacities",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.20791",
+  "doi": null,
+  "rules": [
+   "R4"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 204,
+  "title": "Mitigating Forgetting in Continual Learning with Selective Gradient Projection",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2603.26671",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 205,
+  "title": "Shared LoRA Subspaces for almost Strict Continual Learning",
+  "year": 2026,
+  "venue": "Lecture notes in computer science",
+  "arxiv": "2602.06043",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 209,
+  "title": "Spectral Imbalance Causes Forgetting in Low-Rank Continual Adaptation",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.00722",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 215,
+  "title": "Continual Fine-Tuning with Provably Accurate and Parameter-Free Task Retrieval",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2603.13235",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 245,
+  "title": "Provably Safe Model Updates",
+  "year": 2025,
+  "venue": "IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+  "arxiv": "2512.01899",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 246,
+  "title": "Memory-Integrated Reconfigurable Adapters: A Unified Framework for Settings with Multiple Tasks",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2512.00940",
+  "doi": null,
+  "rules": [
+   "R5",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 249,
+  "title": "Resolving Conflicts in Lifelong Learning via Aligning Updates in Subspaces",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2512.08960",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 269,
+  "title": "Path-Coordinated Continual Learning with Neural Tangent Kernel-Justified Plasticity: A Theoretical Framework with Near State-of-the-Art Performance",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2511.02025",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14",
+   "S4b"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 286,
+  "title": "On the Theory of Continual Learning with Gradient Descent for Neural Networks",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2510.05573",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 293,
+  "title": "LANCE: Low Rank Activation Compression for Efficient On-Device Continual Learning",
+  "year": 2025,
+  "venue": "Lecture notes in computer science",
+  "arxiv": "2509.21617",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 309,
+  "title": "ONG: Orthogonal Natural Gradient Descent",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2508.17169",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 310,
+  "title": "High-dimensional Asymptotics of Generalization Performance in Continual Ridge Regression",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2508.15494",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 330,
+  "title": "Overcoming catastrophic forgetting in neural networks",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2507.10485",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 339,
+  "title": "Little by Little: Continual Learning via Incremental Mixture of Rank-1 Associative Memory Experts",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2506.21035",
+  "doi": null,
+  "rules": [
+   "R5",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 347,
+  "title": "Analytic Task Scheduler: Recursive Least Squares Based Method for Continual Learning in Embodied Foundation Models",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2506.09623",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 373,
+  "title": "Continuous Subspace Optimization for Continual Learning",
+  "year": 2025,
+  "venue": "neural information processing systems",
+  "arxiv": "2505.11816",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 384,
+  "title": "Bayesian continual learning and forgetting in neural networks",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2504.13569",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 394,
+  "title": "Pareto Continual Learning: Preference-Conditioned Learning and Adaption for Dynamic Stability-Plasticity Trade-off",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2503.23390",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 399,
+  "title": "Analytic Subspace Routing: How Recursive Least Squares Works in Continual Learning of Large Language Model",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2503.13575",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 403,
+  "title": "No Forgetting Learning: Buffer-free Continual Learning Classification",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2503.04638",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 415,
+  "title": "Neural Networks Remember More: The Power of Parameter Isolation and Combination",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2502.10966",
+  "doi": null,
+  "rules": [
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 431,
+  "title": "Directed Structural Adaptation to Overcome Statistical Conflicts and Enable Continual Learning",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2412.04190",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 433,
+  "title": "Take Only What You Need: Rank Minimization as an Implicit Forgetting Regularizer in Continual Learning",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2412.01004",
+  "doi": null,
+  "rules": [
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 440,
+  "title": "CODE-CL: Conceptor-Based Gradient Projection for Deep Continual Learning",
+  "year": 2024,
+  "venue": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "arxiv": "2411.15235",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 465,
+  "title": "Continual learning with the neural tangent ensemble",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2408.17394",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 466,
+  "title": "Theoretical Insights into Overparameterized Models in Multi-Task and Replay-Based Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2408.16939",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 473,
+  "title": "Parameter-Efficient Fine-Tuning for Continual Learning: A Neural Tangent Kernel Perspective",
+  "year": 2024,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "arxiv": "2407.17120",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S4b"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 477,
+  "title": "Order parameters and phase transitions of continual learning in deep neural networks",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2407.10315",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 485,
+  "title": "Theory on Mixture-of-Experts in Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2406.16437",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 502,
+  "title": "AdapterSwap: Continuous Training of LLMs with Data Removal and Access-Control Guarantees",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2404.08417",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 504,
+  "title": "On the Convergence of Continual Learning with Adaptive Methods",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2404.05555",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 513,
+  "title": "Self-Expansion of Pre-trained Models with Mixture of Adapters for Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2403.18886",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 522,
+  "title": "Analyzing and Reducing Catastrophic Forgetting in Parameter Efficient Tuning",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2402.18865",
+  "doi": null,
+  "rules": [
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 541,
+  "title": "Efficient Rehearsal Free Zero Forgetting Continual Learning using Adaptive Weight Modulation",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2311.15276",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 556,
+  "title": "Keep Moving: identifying task-relevant subspaces to maximise plasticity for newly learned tasks",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2310.04741",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S12",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 558,
+  "title": "Towards guarantees for parameter isolation in continual learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2310.01165",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7,C8",
+  "note": "Lanzillotta et al.: guarantees against forgetting for parameter-isolation methods.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 570,
+  "title": "IF2Net: Innately Forgetting-Free Networks for Continual Learning",
+  "year": 2023,
+  "venue": "arXiv",
+  "arxiv": "2306.10480",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 585,
+  "title": "Does Continual Learning Equally Forget All Parameters?",
+  "year": 2023,
+  "venue": "arXiv",
+  "arxiv": "2304.04158",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 612,
+  "title": "ORFit: One-Pass Learning via Bridging Orthogonal Gradient Descent and Recursive Least-Squares",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2207.13853",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "SAME (construction)",
+  "claims": "C5,C6,C7",
+  "note": "ORFit Lemma 3.1: in a linear model, the step along the gradient projected orthogonal to previous gradients, with step size set to interpolate the new example, leaves all previous predictions unchanged. This is the zero-interference exact-fit update of Theorem 15(b) / Theorem 16(a). It also truncates the stored basis by PCA and calls this minimax-optimal for worst-case forgetting. (Full text read, Sections 2-3.)",
+  "evidence": "full text (partial)",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S3",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 613,
+  "title": "Balancing Stability and Plasticity through Advanced Null Space in Continual Learning",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2207.12061",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 622,
+  "title": "Theoretical Understanding of the Information Flow on Continual Learning Performance",
+  "year": 2022,
+  "venue": "arXiv",
+  "arxiv": "2204.12010",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 626,
+  "title": "Continual learning: a feature extraction formalization, an efficient algorithm, and fundamental obstructions",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2203.14383",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 640,
+  "title": "Flattening Sharpness for Dynamic Gradient Projection Memory Benefits Continual Learning",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2110.04593",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 650,
+  "title": "Layerwise Optimization by Gradient Decomposition for Continual Learning",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2105.07561",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 665,
+  "title": "Ternary Feature Masks: zero-forgetting for task-incremental learning",
+  "year": 2020,
+  "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "arxiv": "2001.08714",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 693,
+  "title": "Space lower bounds for linear prediction in the streaming model",
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "1902.03498",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (technique)",
+  "claims": "C5",
+  "note": "Dagan, Kur, Shamir: Omega(d^2) memory for streaming linear regression via a Grassmannian packing of exp(Omega(d^2)) subspaces that the memory must tell apart; the same counting argument as Theorem 15(a), for a different problem (no forgetting, no precision dependence). (Full text read, pp.1-3.)",
+  "evidence": "full text (partial)",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 705,
+  "title": "Volume of Metric Balls in High-Dimensional Complex Grassmann Manifolds",
+  "year": 2015,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "1508.00256",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 714,
+  "title": "Packing and Covering Properties of Subspace Codes for Error Control in Random Linear Network Coding",
+  "year": 2008,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "0811.4163",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 719,
+  "title": "Quantization Bounds on Grassmann Manifolds of Arbitrary Dimensions and MIMO Communications with Feedback",
+  "year": 2007,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "0705.2272",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (covering part)",
+  "claims": "C5",
+  "note": "Version of the preceding result for arbitrary dimensions.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 722,
+  "title": "Quantization Bounds on Grassmann Manifolds and Applications to MIMO Communications",
+  "year": 2006,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "cs/0603039",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (covering part)",
+  "claims": "C5",
+  "note": "Dai, Liu, Rider: quantisation / rate-distortion bounds and exact ball volumes on Grassmann manifolds (MIMO feedback); the covering-number step of Theorem 15 is standard in this literature.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 723,
+  "title": "Sphere packing bounds in the Grassmann and Stiefel manifolds",
+  "year": 2003,
+  "venue": "IEEE Transactions on Information Theory",
+  "arxiv": "math/0308110",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 726,
+  "title": "Packing Lines, Planes, etc.: Packings in Grassmannian Space",
+  "year": 2002,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "math/0208004",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 727,
+  "title": "A Family of Optimal Packings in Grassmannian Manifolds",
+  "year": 2002,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "math/0208003",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 731,
+  "title": "Metric Entropy of Homogeneous Spaces",
+  "year": 1997,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "math/9701213",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 732,
+  "title": "Metric entropy of homogeneous spaces and Finsler geometry of classical Lie groups",
+  "year": 1997,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "math/9701204",
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 733,
+  "title": "Learning Dynamics of Continual Learning: A Unified View of Data Attribution, Forgetting, and Plasticity Loss",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.33620",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 736,
+  "title": "Forgetting, plasticity, and co-observation: a third facet of continual learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.18803",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 740,
+  "title": "Can Scale Save Us From Plasticity Loss in Large Language Models?",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.24752",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 741,
+  "title": "Preserving Plasticity in Continual Learning via Dynamical Isometry",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.09762",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 742,
+  "title": "Predicting Plasticity in Deep Continual Learning: A Theoretical Perspective",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.09044",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 743,
+  "title": "SPHERE: Mitigating the Loss of Spectral Plasticity in Mixture-of-Experts for Deep Reinforcement Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.04712",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 746,
+  "title": "The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2604.01913",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 749,
+  "title": "Why Do Neural Networks Forget: A Study of Collapse in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2603.04580",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 750,
+  "title": "Do Neural Networks Lose Plasticity in a Gradually Changing World?",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.09234",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 753,
+  "title": "Continual Learning with Query-Only Attention",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2510.00365",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 754,
+  "title": "Barriers for Learning in an Evolving World: Mathematical Understanding of Loss of Plasticity",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2510.00304",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 755,
+  "title": "Spectral Collapse Drives Loss of Plasticity in Deep Continual Learning",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2509.22335",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 760,
+  "title": "Mitigating Plasticity Loss in Continual Reinforcement Learning by Reducing Churn",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2506.00592",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 761,
+  "title": "Preserving Plasticity in Continual Learning with Adaptive Linearity Injection",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2505.09486",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 771,
+  "title": "Neural Network Plasticity and Loss Sharpness",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2409.17300",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 774,
+  "title": "Learning Continually by Spectral Regularization",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2406.06811",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 777,
+  "title": "Addressing Loss of Plasticity and Catastrophic Forgetting in Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2404.00781",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 779,
+  "title": "Directions of Curvature as an Explanation for Loss of Plasticity",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2312.00246",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 781,
+  "title": "Maintaining Plasticity in Continual Learning via Regenerative Regularization",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2308.11958",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 782,
+  "title": "Maintaining Plasticity in Deep Continual Learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2306.13812",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 783,
+  "title": "Loss of Plasticity in Continual Deep Reinforcement Learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2303.07507",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 784,
+  "title": "SPARCL: Spectral Partitioned Analytic Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.21307",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S13",
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 786,
+  "title": "Learning without Overwriting: A Theory of Self-Distillation and Supervised Fine-Tuning in Continual Reasoning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2610.05200",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 789,
+  "title": "FOGO: Forgetting-aware Orthogonalization Optimizer",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.10406",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 790,
+  "title": "Recovery Guarantees for Continual Learning of Dependent Tasks: Memory, Data-Dependent Regularization, and Data-Dependent Weights",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2604.17578",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 791,
+  "title": "From Order to Distribution: An Exact Operator Framework for Forgetting in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2604.13460",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "Exact operator identity for forgetting under i.i.d. task sampling in linear regression (2026).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 796,
+  "title": "Heads collapse, features stay: Why Replay needs big buffers",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2512.07400",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 798,
+  "title": "Fast Last-Iterate Convergence of SGD in the Smooth Interpolation Regime",
+  "year": 2025,
+  "venue": "neural information processing systems",
+  "arxiv": "2507.11274",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S14",
+   "S3",
+   "S4a"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 799,
+  "title": "Optimal Rates in Continual Linear Regression via Increasing Regularization",
+  "year": 2025,
+  "venue": "neural information processing systems",
+  "arxiv": "2506.06501",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "Levinstein et al. 2025.",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S14",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 800,
+  "title": "Global Convergence of Continual Learning on Non-IID Data",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2503.18511",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 802,
+  "title": "Last Iterate Convergence of Incremental Methods and Applications in Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2403.06873",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 804,
+  "title": "Distal Interference: Exploring the Limits of Model-Based Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2402.08255",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 805,
+  "title": "Class Gradient Projection For Continual Learning",
+  "year": 2023,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "arxiv": "2311.14905",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 806,
+  "title": "SketchOGD: Memory-Efficient Continual Learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2305.16424",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C5",
+  "note": "SketchOGD: compresses the stored OGD gradient subspace by matrix sketching (Min, Wright, Bernstein, Azizan).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 807,
+  "title": "Fixed Design Analysis of Regularization-Based Continual Learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2303.10263",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 808,
+  "title": "Restricted Orthogonal Gradient Projection for Continual Learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2301.12131",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 811,
+  "title": "Provable Continual Learning via Sketched Jacobian Approximations",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2112.05095",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7",
+  "note": "Heckel: EWC provably forgets with a poor diagonal Hessian approximation; sketched-Jacobian regularisation is provable.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 812,
+  "title": "Learning Curves for Continual Learning in Neural Networks: Self-Knowledge Transfer and Forgetting",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2112.01653",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S4b"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 814,
+  "title": "Generalisation Guarantees for Continual Learning with Orthogonal Gradient Descent",
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2006.11942",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7",
+  "note": "Generalisation guarantees for OGD in the NTK (lazy) regime.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S4b",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 815,
+  "title": "Continual Learning in Transition",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.06216",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R3"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 816,
+  "title": "Learning What to Remember: Test-Time Training via Context Distillation",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.01672",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 817,
+  "title": "Lifelong In-Context Learning with Transformers Requires Parametric Forms of Attention",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.25342",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2",
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 823,
+  "title": "In-Place Test-Time Training",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2604.06169",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 826,
+  "title": "Learning to Remember, Learn, and Forget in Attention-Based Models",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.09075",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R3",
+   "R5",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C1,C7",
+  "note": "Palimpsa: in-context learning in gated linear attention as continual learning with a stability-plasticity dilemma; fixed capacity and interference.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2",
+   "S6",
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 829,
+  "title": "End-to-End Test-Time Training for Long Context",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2512.23675",
+  "doi": null,
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 831,
+  "title": "LoLA: Low-Rank Linear Attention With Sparse Caching",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2505.23666",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2",
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 838,
+  "title": "The Sequential Price of Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.29674",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 840,
+  "title": "Optimal L2 Regularization in High-dimensional Continual Linear Regression",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2601.13844",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 841,
+  "title": "Are Greedy Task Orderings Better Than Random in Continual Linear Regression?",
+  "year": 2025,
+  "venue": "neural information processing systems",
+  "arxiv": "2510.19941",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S3",
+   "S4a"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 843,
+  "title": "Unlocking the Power of Rehearsal in Continual Learning: A Theoretical Perspective",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2506.00205",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 844,
+  "title": "From Continual Learning to SGD and Back: Better Rates for Continual Linear Models",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2504.04579",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "Evron et al. 2026.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3",
+   "S4a"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 845,
+  "title": "Memory-Statistics Tradeoff in Continual Learning with Structural Regularization",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2504.04039",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R4"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C5,C6",
+  "note": "Memory-statistics trade-off in two-task continual linear regression: memory counted as the number of vectors defining a structural regularisation; upper and lower bounds on excess risk (abstract read).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3",
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 846,
+  "title": "Analysis of Overparameterization in Continual Learning under a Linear Model",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2502.10442",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 847,
+  "title": "A Statistical Theory of Regularization-Based Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2406.06213",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 848,
+  "title": "Understanding Forgetting in Continual Learning with Linear Regression",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2405.17583",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "Ding et al. 2024.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 849,
+  "title": "The Joint Effect of Task Similarity and Overparameterization on Catastrophic Forgetting -- An Analytical Model",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2401.12617",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 850,
+  "title": "Distributed Continual Learning with CoCoA in High-dimensional Linear Regression",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2312.01795",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 851,
+  "title": "Theory on Forgetting and Generalization of Continual Learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2302.05836",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "Lin et al. 2023.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 852,
+  "title": "Analysis of Catastrophic Forgetting for Random Orthogonal Transformation Tasks in the Overparameterized Regime",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2207.06475",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 853,
+  "title": "How catastrophic can catastrophic forgetting be in linear regression?",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2205.09588",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "Evron et al. 2022.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3",
+   "S4a"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 860,
+  "title": "Estimating and Orthogonalizing Unknown Pre-training Gradients for Continual Fine-tuning of Large Language Models",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.30935",
+  "doi": null,
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 877,
+  "title": "LOKI: Memory-Free Null-Space Constrained Lifelong Knowledge Editing",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.19679",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 878,
+  "title": "The Stable Recovery Manifold: Geometric Principles Governing Recoverability in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.13637",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 880,
+  "title": "Catastrophic Forgetting as Accessibility Collapse: A Three-Level Framework for Knowledge Persistence in Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.06032",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 882,
+  "title": "A Local Perturbation Theory for Cross-Domain Interference and Recovery in Multi-Domain RL",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.02398",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 906,
+  "title": "Fisher-Orthogonal Projected Natural Gradient Descent for Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2601.12816",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 911,
+  "title": "OPLoRA: Orthogonal Projection LoRA Prevents Catastrophic Forgetting during Parameter-Efficient Fine-Tuning",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2510.13003",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 912,
+  "title": "On the Implicit Adversariality of Catastrophic Forgetting in Deep Continual Learning",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2510.09181",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 916,
+  "title": "Replay Can Provably Increase Forgetting",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2506.04377",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C6,C8",
+  "note": "Mahdaviyeh et al.: in continual linear regression with tasks as subspaces, replay can provably increase forgetting.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 917,
+  "title": "Beyond catastrophic forgetting in associative networks with self-interactions",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2504.04560",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 920,
+  "title": "Put the Space of LoRA Initialization to the Extreme to Preserve Pre-trained Knowledge",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2503.02659",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 935,
+  "title": "DS-AL: A Dual-Stream Analytic Learning for Exemplar-Free Class-Incremental Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2403.17503",
+  "doi": null,
+  "rules": [
+   "R2"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 943,
+  "title": "Continual Learning with Scaled Gradient Projection",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2302.01386",
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 948,
+  "title": "Sparsity and Heterogeneous Dropout for Continual Learning in the Null Space of Neural Activations",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2203.06514",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 951,
+  "title": "TRGP: Trust Region Gradient Projection for Continual Learning",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2202.02931",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 954,
+  "title": "Training Networks in Null Space of Feature Covariance for Continual Learning",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2103.07113",
+  "doi": null,
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 955,
+  "title": "Continual Learning in Low-rank Orthogonal Subspaces",
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2010.11635",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 956,
+  "title": "A Theoretical Analysis of Catastrophic Forgetting through the NTK Overlap Matrix",
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2010.04003",
+  "doi": null,
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "NTK overlap matrix and forgetting (Doan et al.).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 959,
+  "title": "A Bellman Optimality Equation for Plasticity",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.10776",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 962,
+  "title": "Drift and Dependence: Layer-wise Information-Theoretic Bounds for Replay-Based Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.11690",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R4",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S6",
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 975,
+  "title": "FIRE: Frobenius-Isometry Reinitialization for Balancing the Stability-Plasticity Tradeoff",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.08040",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 979,
+  "title": "On Understanding of the Dynamics of Model Capacity in Continual Learning",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2508.08052",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1008,
+  "title": "Information-Theoretic Generalization Bounds of Replay-based Continual Learning",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2507.12043",
+  "doi": null,
+  "rules": [
+   "R3",
+   "R4"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1012,
+  "title": "Memory Bounds for Continual Learning",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2204.10830",
+  "doi": null,
+  "rules": [
+   "R4"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C4,C5",
+  "note": "Chen, Papadimitriou, Peng: memory linear in the number of tasks for general continual learners.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1014,
+  "title": "Optimal Continual Learning has Perfect Memory and is NP-hard",
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2006.05188",
+  "doi": null,
+  "rules": [
+   "R4"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C4",
+  "note": "Knoblauch et al.: optimal continual learning needs perfect memory and is NP-hard.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1016,
+  "title": "DeltaTTT: Layerwise Optimization for Nonlinear Recurrent Memory",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2610.08553",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1021,
+  "title": "Anatomy of Associative Recall in Fixed-State Recurrences: A Matched-State Decomposition, an Interference Wall, and a Curriculum That Breaks It",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.16183",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (empirical)",
+  "claims": "C3",
+  "note": "Boesch, Wee: at a fixed state budget, interference under sparse supervision rather than capacity limits associative recall in fixed-state recurrences.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1022,
+  "title": "The Query Knows What to Forget: A Second Erase Direction for Linear Attention",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.13668",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1023,
+  "title": "Kernelized Linear Attention: Breaking the Capacity Wall with Symmetric Cones",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2607.17419",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1024,
+  "title": "A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State Forgets",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2607.02303",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (architecture)",
+  "claims": "C1",
+  "note": "HOLA: keeps the delta-rule state and caches the tokens with the largest beta*||e||, i.e. the committed prediction residual (our 'surprise').",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1025,
+  "title": "CARVE: Content-Aware Recurrent with Value Efficiency for Chunk-Parallel Linear Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2606.27229",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1026,
+  "title": "Erase-then-Delta Attention: Decoupling Erase and Write Addresses in Delta-Rule Linear Attention",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.26560",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1027,
+  "title": "Q-Delta: Beyond Key-Value Associative State Evolution",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2606.08804",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1028,
+  "title": "Don't Read Everything: A Curvature-Conditioned Query for Linear Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2606.01294",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1029,
+  "title": "Parallax: Parameterized Local Linear Attention for Language Modeling",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.29157",
+  "doi": null,
+  "rules": [
+   "R5",
+   "R5b"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8",
+   "S9"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1031,
+  "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2605.22791",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1033,
+  "title": "OSDN: Improving Delta Rule with Provable Online Preconditioning in Linear Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2605.13473",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R3",
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (architecture)",
+  "claims": "C1",
+  "note": "OSDN: provable online preconditioning of the delta rule, convergence and residual-contraction bounds.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1034,
+  "title": "Kaczmarz Linear Attention",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.08587",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R2",
+   "R3",
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (architecture)",
+  "claims": "C1",
+  "note": "Kaczmarz Linear Attention: key-norm-normalised step size for Gated DeltaNet derived from the online-regression objective (Zou, Ren, Liu).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8",
+   "S9"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1036,
+  "title": "Preconditioned DeltaNet: Curvature-aware Sequence Modeling for Linear Recurrences",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2604.21100",
+  "doi": null,
+  "rules": [
+   "R5",
+   "R5b"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8",
+   "S9"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1037,
+  "title": "FG$^2$-GDN: Enhancing Long-Context Gated Delta Networks with Doubly Fine-Grained Control",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2604.19021",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1039,
+  "title": "Hybrid Associative Memories",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2603.22325",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1041,
+  "title": "HiPPO Zoo: Explicit Memory Mechanisms for Interpretable State Space Models",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.21340",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1045,
+  "title": "Attention as Conditioning: What Classical Learning Theory Predicts About Linear Transformers",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2508.08289",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C1",
+  "note": "Attention as Conditioning: DeltaNet's update is term-for-term Rescorla-Wagner error correction, with an exact closed form for blocking (cue competition), verified to 1e-7; this is the delta-rule interference law in animal-learning form.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1048,
+  "title": "Blending Complementary Memory Systems in Hybrid Quadratic-Linear Transformers",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2506.00744",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1049,
+  "title": "Test-Time Training Done Right",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2505.23884",
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1052,
+  "title": "It's All Connected: A Journey Through Test-Time Memorization, Attentional Bias, Retention, and Online Optimization",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2504.13173",
+  "doi": null,
+  "rules": [
+   "R1",
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1053,
+  "title": "Test-time regression: a unifying framework for designing sequence models with associative memory",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2501.12352",
+  "doi": null,
+  "rules": [
+   "R5",
+   "R5b"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (framing)",
+  "claims": "C1,C2",
+  "note": "Wang, Shi, Fox: test-time regression as a unifying framework for sequence models with associative memory.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8",
+   "S9"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1069,
+  "title": "Switching Linear Attention",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.39034",
+  "doi": null,
+  "rules": [
+   "R5",
+   "R5b"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S9"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1071,
+  "title": "Local Linear Attention: An Optimal Interpolation of Linear and Softmax Attention For Test-Time Regression",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2510.01450",
+  "doi": null,
+  "rules": [
+   "R5",
+   "R5b"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S9"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1076,
+  "title": "Hyperspectral Image Classification Based on Class Incremental Learning with Selective State Space Models",
+  "year": 2025,
+  "venue": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/igarss55030.2025.11243179",
+  "rules": [
+   "R1",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1077,
+  "title": "Dynamic Synaptic Architecture (DSA): A Non-Euclidean Topological State-Space Framework for Mitigating Catastrophic Forgetting in Continual Learning",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.22780162",
+  "rules": [
+   "R1",
+   "R6"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E2",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S1",
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1078,
+  "title": "Time Series Class-Incremental Learning with Residual Mamba Encoder",
+  "year": 2024,
+  "venue": "International Conference on Computers and Artificial Intelligence Technology (CAIT)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/cait64506.2024.10963184",
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1079,
+  "title": "Probabilistic Mixture of Hyperbolic Mamba for Few-Shot Class-Incremental Learning",
+  "year": 2025,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1145/3746027.3755306",
+  "rules": [
+   "R1",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1083,
+  "title": "Mamba-Based Multimodal Continual Learning for Audio-Visual Classification with Prototype-Enhanced Anti-Forgetting Mechanism",
+  "year": 2025,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1145/3746266.3762161",
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1086,
+  "title": "DIPathMamba: A domain-incremental weakly supervised state space model for pathology image segmentation",
+  "year": 2025,
+  "venue": "Medical Image Analysis",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1016/j.media.2025.103563",
+  "rules": [
+   "R1"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E5",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1087,
+  "title": "ReCESS: Replay-Based Continual Equivariant Learning with State-Space for Seizure Detection from Multichannel EEG",
+  "year": 2025,
+  "venue": "SSRN Electronic Journal",
+  "arxiv": null,
+  "doi": "https://doi.org/10.2139/ssrn.5132659",
+  "rules": [
+   "R1"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E5",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1094,
+  "title": "DF-PEM: Dual-Flow Prompt-Expert Mamba for Multimodal Remote Sensing Incremental Classification",
+  "year": 2026,
+  "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tgrs.2026.3674175",
+  "rules": [
+   "R1",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S1"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1107,
+  "title": "BiLoRA: Almost-orthogonal Parameter Spaces for Continual Learning",
+  "year": 2025,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/cvpr52734.2025.02385",
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1108,
+  "title": "Bilinear Optimization Divergence: Diagnosing Factor-Constrained LoRA Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.23594",
+  "doi": "https://doi.org/10.48550/arxiv.2609.23594",
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1109,
+  "title": "InfBA: Interference-Free Bottleneck Adaptation for Continual Learning",
+  "year": 2026,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tpami.2026.3690676",
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1112,
+  "title": "Orthogonal Subspace Projection for Continual Learning: \"Eliminating\" Catastrophic Forgetting in Ai",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.21926885",
+  "rules": [
+   "R3",
+   "R4",
+   "R6",
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E2",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S10",
+   "S14",
+   "S5",
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1115,
+  "title": "Modular Continual Learning via Orthogonal Vectorial Grafting: Achieving Zero Catastrophic Forgetting on Large Transformer Architectures",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.22802665",
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S10",
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1116,
+  "title": "Comparison of Input-Data Matrix Representations Used for Continual Learning with Orthogonal Weight Modification on Edge Devices",
+  "year": 2026,
+  "venue": "Sensors",
+  "arxiv": null,
+  "doi": "https://doi.org/10.3390/s26020425",
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1117,
+  "title": "Effective and efficient continual learning",
+  "year": 2023,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.17760/d20592339",
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1119,
+  "title": "STEP: Stable Gradient Projection for Continual Learning",
+  "year": 2026,
+  "venue": "International Conference on Multimedia Retrieval",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1145/3805622.3810725",
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1126,
+  "title": "Rethinking Gradient Projection Continual Learning: Stability/Plasticity Feature Space Decoupling",
+  "year": 2023,
+  "venue": "IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings - IEEE Computer Society Conference on Computer Vision and Pattern Recognition/Proceedings",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/cvpr52729.2023.00362",
+  "rules": [
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C6,C7",
+  "note": "Zhao et al.: stability/plasticity feature-space decoupling in gradient projection.",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1131,
+  "title": "Frozen Core Decomposition (FCD): An Architectural Approach to Continual Learning Without Catastrophic Forgetting",
+  "year": 2025,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.18006951",
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1134,
+  "title": "Introducing Common Null Space of Gradients for Gradient Projection Methods in Continual Learning",
+  "year": 2024,
+  "venue": "ACM International Conference on Multimedia (ACM MM)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1145/3664647.3680605",
+  "rules": [
+   "R3",
+   "R6",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1139,
+  "title": "From task-aware to task-agnostic parameter isolation for incremental learning",
+  "year": 2025,
+  "venue": "Neural Processing Letters",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1007/s11063-025-11792-4",
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1148,
+  "title": "Learning sculpts orthogonal task manifolds for continual skill learning in recurrent networks",
+  "year": 2026,
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.64898/2026.02.15.705283",
+  "rules": [
+   "R3",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1156,
+  "title": "DTG-MA: Hard Guardrails Against Catastrophic Forgetting Through Attention Masking and Task Graphs",
+  "year": 2025,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.17921783",
+  "rules": [
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1167,
+  "title": "Metric Entropy of the Grassmann Manifold",
+  "year": 1999,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1017/9781009701761.019",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1168,
+  "title": "Packing Lines, Planes, etc.: Packings in Grassmannian Spaces",
+  "year": 1996,
+  "venue": "Experimental Mathematics",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1080/10586458.1996.10504585",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1169,
+  "title": "Bounds on packings of spheres in the Grassmann manifold",
+  "year": 2002,
+  "venue": "IEEE Transactions on Information Theory",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tit.2002.801469",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1176,
+  "title": "Correction to \u201cBounds on Packings of Spheres in the Grassmann Manifold\u201d",
+  "year": 2005,
+  "venue": "IEEE Transactions on Information Theory",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tit.2005.850231",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1197,
+  "title": "Density and bounds for Grassmannian codes with chordal distance",
+  "year": 2011,
+  "venue": "IEEE International Symposium on Information Theory (ISIT)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/isit.2011.6033971",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1198,
+  "title": "Quantization Bounds on Grassmann Manifolds and Applications to MIMO Systems",
+  "year": 2005,
+  "venue": "",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (covering part)",
+  "claims": "C5",
+  "note": "Conference version of the preceding results.",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1202,
+  "title": "Volumes of Balls in Grassmann Manifolds with Applications to Coding Theory",
+  "year": 2008,
+  "venue": "MacSphere (McMaster University)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.71548/6307",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1203,
+  "title": "On the exact volume of metric balls in complex Grassmann manifolds",
+  "year": 2015,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/itwf.2015.7360783",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1209,
+  "title": "Packing and covering properties of subspace codes",
+  "year": 2009,
+  "venue": "IEEE International Symposium on Information Theory (ISIT)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/isit.2009.5205292",
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1211,
+  "title": "Packing and Covering Properties of CDCs and Subspace Codes",
+  "year": 2008,
+  "venue": "",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "covering / packing / volume result for Grassmannians or subspace codes",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1243,
+  "title": "Space lower bounds for linear prediction.",
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R7"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (technique)",
+  "claims": "C5",
+  "note": "Duplicate record of the preceding paper.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1301,
+  "title": "Loss of plasticity in deep continual learning",
+  "year": 2024,
+  "venue": "Nature",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1038/s41586-024-07711-7",
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1302,
+  "title": "The Dual Nature of Plasticity Loss in Deep Continual Learning: Dissection and Mitigation",
+  "year": 2025,
+  "venue": "neural information processing systems",
+  "arxiv": null,
+  "doi": "https://doi.org/10.52202/085713-2334",
+  "rules": [
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E5",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1303,
+  "title": "Targeting plasticity loss in continual learning via Null-Space Orthogonal Reorganization",
+  "year": 2026,
+  "venue": "ICT Express",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1016/j.icte.2026.09.010",
+  "rules": [
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E5",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S12",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1305,
+  "title": "Distributional Plasticity Loss in an Exactly Solved Markov Decision Process",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.22735127",
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1324,
+  "title": "The Structural Coherence Bound \u2014 Dirichlet Energy Monitoring for Neural Network Representational Health",
+  "year": 2026,
+  "venue": "Figshare",
+  "arxiv": null,
+  "doi": "https://doi.org/10.6084/m9.figshare.31302097",
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E1",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S12"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1329,
+  "title": "Asymptotic analysis of shallow and deep forgetting in replay with Neural Collapse",
+  "year": 2025,
+  "venue": "Repository for Publications and Research Data (ETH Zurich)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.3929/ethz-c-000792427",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S14",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1344,
+  "title": "One Knob for Two Bottlenecks: Decay-Modulated Fast-Weight Memory Unifies Long-Context and Continual Learning",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.21305797",
+  "rules": [
+   "R1",
+   "R2",
+   "R3",
+   "R5b",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (non-peer-reviewed)",
+  "claims": "C1,C7",
+  "note": "Zenodo: decay rate as one knob for context length and stability/plasticity; delta form is online Widrow-Hoff; freezing slow weights confines forgetting to the bounded memory.",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S14",
+   "S2",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1357,
+  "title": "Rethinking the Stability\u2013Plasticity Dilemma of Dynamically Expandable Networks",
+  "year": 2025,
+  "venue": "Symmetry",
+  "arxiv": null,
+  "doi": "https://doi.org/10.3390/sym17091379",
+  "rules": [
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1370,
+  "title": "Fast Weight Attention for Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.27763",
+  "doi": "https://doi.org/10.48550/arxiv.2608.27763",
+  "rules": [
+   "R1",
+   "R5b",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (architecture)",
+  "claims": "C1",
+  "note": "Fast Weight Attention for Continual Learning: normalised (NLMS-type) first-order updates for fast-weight memories (Falcon family).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1371,
+  "title": "Adaptive Retention & Correction: Test-Time Training for Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2405.14318",
+  "doi": "https://doi.org/10.48550/arxiv.2405.14318",
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1373,
+  "title": "A Trained Fast-Weight Memory: Continual Rule Binding at Inference Without Backward",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.21225721",
+  "rules": [
+   "R1",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1374,
+  "title": "Catastrophic forgetting in simple networks: an analysis of the pseudorehearsal solution",
+  "year": 1999,
+  "venue": "Network Computation in Neural Systems",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1088/0954-898x_10_3_302",
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1376,
+  "title": "Catastrophic Forgetting in Transformer Attention is Structurally Inevitable: A Transfer of the Hopfield Impossibility Theorem",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.19482470",
+  "rules": [
+   "R1",
+   "R6"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (non-peer-reviewed)",
+  "claims": "C3,C4",
+  "note": "Zenodo: impossibility of safe incremental concept addition in linear attention via the key Gram matrix (transfer of a Hopfield result).",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S2"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1391,
+  "title": "The Impact of Overparameterization on Knowledge Transfer and Generalization in Multi-Task and Replay-Based Continual Learning",
+  "year": 2024,
+  "venue": "SSRN Electronic Journal",
+  "arxiv": null,
+  "doi": "https://doi.org/10.2139/ssrn.4958926",
+  "rules": [
+   "R2"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E5",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1393,
+  "title": "A Thermodynamic Theory of Learning Part II: History-Dependent Reachability and Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.07950",
+  "doi": "https://doi.org/10.48550/arxiv.2602.07950",
+  "rules": [
+   "R2",
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E2",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1394,
+  "title": "Convergence of Continual Learning in Homogeneous Deep Networks",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2606.30559",
+  "doi": "https://doi.org/10.48550/arxiv.2606.30559",
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S3"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1403,
+  "title": "A Continual Learning Algorithm Based on Orthogonal Gradient Descent Beyond Neural Tangent Kernel Regime",
+  "year": 2023,
+  "venue": "IEEE Access",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/access.2023.3303869",
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S4b",
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1404,
+  "title": "Revisiting Flatness-Aware Optimization in Continual Learning With Orthogonal Gradient Projection",
+  "year": 2025,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tpami.2025.3539019",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1405,
+  "title": "Gradient Projection Memory for Continual Learning",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2103.09762",
+  "doi": "https://doi.org/10.48550/arxiv.2103.09762",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1409,
+  "title": "One-Step Curvature Probes Miss the Fitting Operator: Retained Capacity and Terminal Null-Space Correction for Continual Learning",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2610.03952",
+  "doi": "https://doi.org/10.48550/arxiv.2610.03952",
+  "rules": [
+   "R2",
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1411,
+  "title": "Value Locking: Preserving Safety Alignment via Orthogonal Gradient Projection",
+  "year": 2026,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.17605/osf.io/t42gy",
+  "rules": [
+   "R3"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E1",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1412,
+  "title": "Achieving Plasticity-Stability Trade-Off in Continual Learning Through Adaptive Orthogonal Projection",
+  "year": 2025,
+  "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tcsvt.2025.3547916",
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C6",
+  "note": "AdaBOP: strict orthogonal projection sacrifices plasticity; adaptive trade-off.",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1413,
+  "title": "UniGrad-FS: Unified Gradient Projection With Flatter Sharpness for Continual Learning",
+  "year": 2024,
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tii.2024.3435499",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1415,
+  "title": "Structural origins of catastrophic forgetting in self-supervised continual learning: A directional and curvature-based analysis of the learning signal",
+  "year": 2026,
+  "venue": "Research Commons (University of Waikato)",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1416,
+  "title": "TTMC: Brain-Inspired Test-Time Memory Calibration with Orthogonal Projection for Online Continual Learning",
+  "year": 2026,
+  "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1145/3770855.3818072",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1417,
+  "title": "Incremental one-class learning using regularized null-space training for industrial defect detection",
+  "year": 2024,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1117/12.3023369",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1420,
+  "title": "Anatomy of Catastrophic Forgetting: Hidden Representations and Task Semantics",
+  "year": 2021,
+  "venue": "International Conference on Learning Representations",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1421,
+  "title": "Continual learning for efficient machine learning",
+  "year": 2020,
+  "venue": "Oxford University Research Archive (ORA) (University of Oxford)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5287/ora-o5bod4qkm",
+  "rules": [
+   "R3"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1425,
+  "title": "Adaptive Store-and-Recall Memory for Domain Continual Learning",
+  "year": 2025,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/bddm68348.2025.11442046",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1427,
+  "title": "Organizing recurrent network dynamics by task-computation to enable continual learning",
+  "year": 2020,
+  "venue": "UCL Discovery (University College London)",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1428,
+  "title": "Spectral Constraints Resolve the Stability--Plasticity Tradeoff in Continual Learning",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.19144198",
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S5",
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1431,
+  "title": "A Geometric Framework for Continual Learning via Holomorphic Extension and Tensor-Geodesic Dynamics",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.19334293",
+  "rules": [
+   "R2",
+   "R3",
+   "R6"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E2",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1491,
+  "title": "On the Stability-Plasticity Dilemma in Continual Meta-Learning: Theory and Algorithm",
+  "year": 2023,
+  "venue": "neural information processing systems",
+  "arxiv": null,
+  "doi": "https://doi.org/10.52202/075280-1194",
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E5",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1494,
+  "title": "Multi-task Learning Approach to Stability-Plasticity Balance in Continual Learning",
+  "year": 2026,
+  "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.3778/j.issn.1673-9418.2505050",
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1497,
+  "title": "The Stability-Plasticity Boundary: Exact Memory Lower Bounds, Matching Constructions, and a Theory of Future-Relevant Learning State",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.22546047",
+  "rules": [
+   "R3",
+   "R4",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (non-peer-reviewed)",
+  "claims": "C4,C5",
+  "note": "Zenodo v1 release (Nowicki): lower bound r(d-r)+r+O(1) bits for exact lifelong retention of consequences, matching constructive learner, over the binary field F_2, counting rank-r subspaces (Gaussian binomial). No real-valued covering or precision result; record page read.",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S6",
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1510,
+  "title": "Theory of Learning in Neural Networks with Small Weight Perturbations",
+  "year": 2024,
+  "venue": "Digital Access to Scholarship at Harvard (DASH) (Harvard University)",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1522,
+  "title": "Continual Learning in Recurrent Neural Networks with Hypernetworks.",
+  "year": 2020,
+  "venue": "",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R3",
+   "R8"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1538,
+  "title": "Training Networks in Null Space of Feature Covariance With Self-Supervision for Incremental Learning",
+  "year": 2024,
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/tpami.2024.3522258",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1569,
+  "title": "Continual Learning as Computationally Constrained Reinforcement Learning",
+  "year": 2025,
+  "venue": "Foundations and Trends\u00ae in Machine Learning",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1561/2200000116",
+  "rules": [
+   "R3",
+   "R4",
+   "R6",
+   "R8"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S6",
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1584,
+  "title": "Continual learning from a probabilistic perspective",
+  "year": 2026,
+  "venue": "ERA",
+  "arxiv": null,
+  "doi": "https://doi.org/10.7488/era/7512",
+  "rules": [
+   "R4"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1588,
+  "title": "The Impossibility of Model-Internal Personalisation at Scale: Three Structural Properties and Their Architectural Consequence",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.19653477",
+  "rules": [
+   "R4"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E2",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S7"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1598,
+  "title": "Linear Transformers Are Secretly Fast Weight Programmers",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2102.11174",
+  "doi": "https://doi.org/10.48550/arxiv.2102.11174",
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1601,
+  "title": "Linear Transformers Are Secretly Fast Weight Memory Systems",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R5"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1603,
+  "title": "Variational Linear Attention: Stable Associative Memory for Long-Context Transformers",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.11196",
+  "doi": "https://doi.org/10.48550/arxiv.2605.11196",
+  "rules": [
+   "R5",
+   "R5b"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "main",
+  "idx": 1688,
+  "title": "From Online Optimization to Neural State Space Models: A Control-Inspired Approach to Learning",
+  "year": null,
+  "venue": "Padua Research Archive (University of Padova)",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R5b"
+  ],
+  "status": "EXCLUDED",
+  "level": null,
+  "claims": "",
+  "note": "abstract-level exclusion E4",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S9"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 134,
+  "title": "A convergence theorem for the modified delta rule",
+  "year": 1988,
+  "venue": "Neural Networks",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1016/0893-6080(88)90169-4",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 136,
+  "title": "A Decision-Theoretic View of Test-Time Training: When, How Far, and Which Directions to Adapt",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2606.15569",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 162,
+  "title": "A Provable Expressiveness Hierarchy in Hybrid Linear-Full Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2602.01763",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 218,
+  "title": "Assessment of the Rescorla-Wagner model.",
+  "year": 1995,
+  "venue": "Psychological Bulletin",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1037/0033-2909.117.3.363",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 219,
+  "title": "Asymptotic theory of in-context learning by linear attention",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2405.11751",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 273,
+  "title": "Constant-Memory Recall: Learned Associations in a Fixed Matrix State",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2610.00232",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 303,
+  "title": "Demystifying the Long-Range Retrieval Failure in Linear Attention: It's Not the Capacity, It's the Training Signal",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.20667843",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 380,
+  "title": "Fine-Tuning Without Forgetting In-Context Learning: A Theoretical Analysis of Linear Attention Models",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2602.23197",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "Weights-law",
+  "note": "Theoretical analysis of fine-tuning forgetting of in-context learning in linear attention models.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 406,
+  "title": "Gradient Signal Density, Not Capacity, Limits Long-Range Retrieval in Linear Attention",
+  "year": 2026,
+  "venue": "Research Square",
+  "arxiv": null,
+  "doi": "https://doi.org/10.21203/rs.3.rs-10062921/v1",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 424,
+  "title": "How Linear Attention Remembers",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2609.33093",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (empirical)",
+  "claims": "C1,C3",
+  "note": "How Linear Attention Remembers (Lee et al.): decomposition of writes/reads in pretrained GLA and GDN; cross-fact coupling and degradation with memory load.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 427,
+  "title": "How Much Can a Transformer Know? Exact Transmission Capacity for Linear Attention, and a Measurable License for the Rest",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.21890306",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 498,
+  "title": "Long-Range Retrieval in Linear Attention Is Insensitive to Architectural Interventions: Evidence from 16 Systematic Negative Results",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.20670879",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 556,
+  "title": "Neural network capacity using delta rule",
+  "year": 1989,
+  "venue": "Electronics Letters",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1049/el:19890142",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (prior art)",
+  "claims": "C3",
+  "note": "Prados, Kak 1989: delta-rule storage capacity exceeds N patterns in an N-neuron network; capacity of the delta rule studied analytically and experimentally.",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 726,
+  "title": "The Capacity of Artificial Neural Networks Using the Delta Rule.",
+  "year": 1989,
+  "venue": "",
+  "arxiv": null,
+  "doi": "https://doi.org/10.31390/gradschool_disstheses.4869",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (prior art)",
+  "claims": "C3",
+  "note": "1989 dissertation on the information capacity of networks trained with a modified delta rule (about 50% separability at m = 2N).",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 496,
+  "title": "LMS learning algorithms: misconceptions and new results on converence",
+  "year": 2000,
+  "venue": "IEEE Transactions on Neural Networks",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/72.822509",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 569,
+  "title": "On State Reduction in Linear Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2602.04852",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C2,C3",
+  "note": "On State Reduction in Linear Attention (Nazari, Rusch): analysis of how keys and values shape the rank of the recurrent state; low-rank states in trained models.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 581,
+  "title": "Operator-Specific Forgetting in Matrix-Valued Associative Memory (code and data)",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.22051971",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (non-peer-reviewed)",
+  "claims": "C1",
+  "note": "Zenodo (Escobar): closed-form residual laws for selective forgetting in matrix-valued associative memory; lineage theorem relating a complex re-read erase to the delta rule at beta=1; LMS stability condition.",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 694,
+  "title": "State Rank Dynamics in Linear Attention LLMs",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2602.02195",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CLOSE (empirical)",
+  "claims": "C2,C3",
+  "note": "State Rank Dynamics in Linear Attention LLMs: head-level rank stratification of the recurrent state.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 718,
+  "title": "Test-Time Training with KV Binding Is Secretly Linear Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2602.21204",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 483,
+  "title": "Linear Attention as Bayesian Inference",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.18975349",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 404,
+  "title": "gLSTM: Mitigating Over-Squashing by Increasing Storage Capacity",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2510.08450",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 307,
+  "title": "Design Principles for Sequence Models via Coefficient Dynamics",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2510.09389",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 261,
+  "title": "Comba: Improving Bilinear RNNs with Closed-loop Control",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2506.02475",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 299,
+  "title": "DeltaProduct: Improving State-Tracking in Linear RNNs via Householder Products",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2502.10297",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 617,
+  "title": "Query Dual Dynamics Delta: Read-Driven Modulation of Delta-Rule Writes in Fixed-Capacity Fast-Weight Memory",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.22742745",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 319,
+  "title": "Distributed Associative Memory via Online Convex Optimization",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2509.22321",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S17"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 374,
+  "title": "Fast weight programming and linear transformers: from machine learning to neurobiology",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2508.08435",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 422,
+  "title": "How Can Mamba Learn In Context with Outliers and Generalize Provably?",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2510.00399",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 759,
+  "title": "Training Dynamics of In-Context Learning in Linear Attention",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2501.16265",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 678,
+  "title": "Simple linear attention language models balance the recall-throughput tradeoff",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2402.18668",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 26,
+  "title": "Continual Learning in Linear Classification on Separable Data",
+  "year": 2023,
+  "venue": "arXiv",
+  "arxiv": "2306.03534",
+  "doi": null,
+  "rules": [
+   "R10"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S16"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 30,
+  "title": "Convergence and Implicit Bias of Gradient Descent on Continual Linear Classification",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2504.12712",
+  "doi": null,
+  "rules": [
+   "R10"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S16"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 78,
+  "title": "Optimal Task Order for Continual Learning of Multiple Tasks",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2502.03350",
+  "doi": null,
+  "rules": [
+   "R10"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S16"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 95,
+  "title": "Sequence Transferability and Task Order Selection in Continual Learning",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2502.06544",
+  "doi": null,
+  "rules": [
+   "R10"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S16"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 18,
+  "title": "Chained Tuning Leads to Biased Forgetting",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2412.16469",
+  "doi": null,
+  "rules": [
+   "R10"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S16"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 100,
+  "title": "Task Ordering Matters for Incremental Learning",
+  "year": 2021,
+  "venue": "International Symposium on Networks, Computers and Communications (ISNCC)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/isncc52172.2021.9615907",
+  "rules": [
+   "R10"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S16"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 106,
+  "title": "The Effect of Task Ordering in Continual Learning",
+  "year": 2022,
+  "venue": "arXiv",
+  "arxiv": "2205.13323",
+  "doi": null,
+  "rules": [
+   "R10"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S16"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 385,
+  "title": "Forgetting Transformer: Softmax Attention with a Forget Gate",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2503.02130",
+  "doi": null,
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 630,
+  "title": "Recursive least-squares learning algorithms for neural networks",
+  "year": 1990,
+  "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1117/12.23462",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "supplementary",
+  "idx": 742,
+  "title": "The Widrow-Hoff algorithm for McCulloch-Pitts type neurons",
+  "year": 1994,
+  "venue": "IEEE Transactions on Neural Networks",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/72.329689",
+  "rules": [
+   "R9"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S15"
+  ]
+ },
+ {
+  "set": "snowball",
+  "idx": 1,
+  "title": "An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks",
+  "year": 2013,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.48550/arxiv.1312.6211",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "backward"
+  ]
+ },
+ {
+  "set": "snowball",
+  "idx": 7,
+  "title": "Going Beyond Linear Transformers with Recurrent Fast Weight Programmers",
+  "year": 2021,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.48550/arxiv.2106.06295",
+  "rules": [
+   "R1"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "forward"
+  ]
+ },
+ {
+  "set": "snowball",
+  "idx": 11,
+  "title": "Improved Schemes for Episodic Memory-based Lifelong Learning",
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.48550/arxiv.1909.11763",
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "backward"
+  ]
+ },
+ {
+  "set": "snowball",
+  "idx": 18,
+  "title": "Overcoming catastrophic forgetting with hard attention to the task",
+  "year": 2018,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": null,
+  "doi": null,
+  "rules": [
+   "R3"
+  ],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "backward"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 6,
+  "title": "A Conformal Predictive Measure for Assessing Catastrophic Forgetting",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2505.10677",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE (framing)",
+  "claims": "C2",
+  "note": "Conformal-prediction-based monitoring of forgetting (CPCF).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 29,
+  "title": "A Retention-Centric Framework for Continual Learning with Guaranteed Model Developmental Safety",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2410.03955",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 40,
+  "title": "A Unified and General Framework for Continual Learning",
+  "year": 2024,
+  "venue": "arXiv",
+  "arxiv": "2403.13249",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 56,
+  "title": "Adaptive Orthogonal Projection for Batch and Online Continual Learning",
+  "year": 2022,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1609/aaai.v36i6.20634",
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 186,
+  "title": "Complex KDA: Understanding and Enhancing the Expressivity of Kimi Delta Attention",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2609.24797",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 198,
+  "title": "Constructions and Properties of Optimally Spread Subspace Packings",
+  "year": 2025,
+  "venue": "Journal of Fourier Analysis and Applications",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1007/s00041-025-10225-z",
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "SUPPORT",
+  "claims": "C5",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 236,
+  "title": "Continual Learning in Deep Neural Network by Using a Kalman Optimiser",
+  "year": 2019,
+  "venue": "arXiv",
+  "arxiv": "1905.08119",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 238,
+  "title": "Continual Learning in Modern Hopfield Networks with an Application to Diffusion Models",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2605.27975",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 247,
+  "title": "Continual Learning Through Synaptic Intelligence",
+  "year": 2017,
+  "venue": "arXiv",
+  "arxiv": "1703.04200",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 255,
+  "title": "Continual Learning with Gated Incremental Memories for sequential data processing",
+  "year": 2020,
+  "venue": "arXiv",
+  "arxiv": "2004.04077",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 256,
+  "title": "Continual Learning with Guarantees via Weight Interval Constraints",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2206.07996",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7",
+  "note": "Continual learning with guarantees: interval constraints on the parameter space bound forgetting (Hyperrectangle Training).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 303,
+  "title": "Data-dependent and Oracle Bounds on Forgetting in Continual Learning",
+  "year": 2024,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2406.09370",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C2",
+  "note": "Friedman, Meir: data-dependent upper bounds on forgetting for exemplar-free methods (certificate-like objects).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S13"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 437,
+  "title": "Gated Slot Attention-2: Two-Sided Associative Memory Correction in Linear Attention",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2610.02816",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 523,
+  "title": "Kalman Delta Networks: Uncertainty-aware Associative Memory",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2609.07816",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 537,
+  "title": "Last-Iterate Convergence of Randomized Kaczmarz and SGD with Greedy Step Size",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2604.09909",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S4a"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 566,
+  "title": "Lifelong Learning with Sketched Structural Regularization",
+  "year": 2021,
+  "venue": "arXiv",
+  "arxiv": "2104.08604",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C5",
+  "note": "Sketched structural regularisation: compressing the importance matrix (EWC) by sketching, with guarantees.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 572,
+  "title": "Linear and logarithmic capacities in associative neural networks",
+  "year": 1989,
+  "venue": "IEEE Transactions on Information Theory",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1109/18.30977",
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE (prior art)",
+  "claims": "C3",
+  "note": "1989: linear and logarithmic storage capacities in associative nets, spectral storage strategy.",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 583,
+  "title": "Mathematics of Continual Learning",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2504.17963",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 660,
+  "title": "On Sequential Bayesian Inference for Continual Learning",
+  "year": 2023,
+  "venue": "arXiv",
+  "arxiv": "2301.01828",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 663,
+  "title": "On the Stability-Plasticity Dilemma of Class-Incremental Learning",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2304.01663",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S6"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 686,
+  "title": "Optimization and Generalization of Regularization-Based Continual Learning: a Loss Approximation Viewpoint",
+  "year": 2020,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2006.10974",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 689,
+  "title": "Orthogonal Gradient Descent for Continual Learning",
+  "year": 2019,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "1910.07104",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C7",
+  "note": "Orthogonal Gradient Descent (Farajtabar et al. 2020).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 708,
+  "title": "PMF-CL: Pareto-Minimal-Forgetting Continual Learner for Conflicting Tasks",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2605.19145",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C5,C6",
+  "note": "PMF-CL (Nair, Eryilmaz, Liu): states that what information must be stored to minimise forgetting is not understood; derives Pareto-minimal-forgetting learners for linear regression with O(d^2) static memory and an exact forgetting expression; abstract and snippets read, not the full text.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 725,
+  "title": "Provable and Efficient Continual Representation Learning",
+  "year": 2022,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2203.02026",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10",
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 726,
+  "title": "Provable Effects of Data Replay in Continual Learning: A Feature Learning Perspective",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2602.02767",
+  "doi": "https://doi.org/10.48550/arxiv.2602.02767",
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 764,
+  "title": "Rethinking linear attention as fast weight programmers with routing and nonlinearity",
+  "year": 2026,
+  "venue": "Expert Systems with Applications",
+  "arxiv": null,
+  "doi": "https://doi.org/10.1016/j.eswa.2026.134596",
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 789,
+  "title": "Sample Compression for Self Certified Continual Learning",
+  "year": 2025,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2503.10503",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C5",
+  "note": "Continual Pick-to-Learn: sample-compression theory gives computable generalisation bounds after each task (retains representative samples per task).",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 790,
+  "title": "SANE: State Anomaly Neutralization for Stable Extreme-Context Delta-Rule Models",
+  "year": 2026,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2608.22354",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 845,
+  "title": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2609.38169",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 857,
+  "title": "Superposition as Geometry: Grassmann Manifold Structure of Neural Representations",
+  "year": 2026,
+  "venue": "SSRN Electronic Journal",
+  "arxiv": null,
+  "doi": "https://doi.org/10.2139/ssrn.6861901",
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "published (venue as recorded)",
+  "found_by": [
+   "S11"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 877,
+  "title": "The Bayesian Approach to Continual Learning: An Overview",
+  "year": 2025,
+  "venue": "arXiv",
+  "arxiv": "2507.08922",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S10"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 883,
+  "title": "The Ideal Continual Learner: An Agent That Never Forgets",
+  "year": 2023,
+  "venue": "arXiv (Cornell University)",
+  "arxiv": "2305.00316",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE",
+  "claims": "C4,C5",
+  "note": "Peng, Giampouras, Vidal: the ideal continual learner avoids forgetting by construction and unifies memory-, regularisation- and expansion-based methods; stores information about past tasks.",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S14"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 890,
+  "title": "The Price of a Lesson: Damage Laws for Sequential Weight Edits",
+  "year": 2026,
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "arxiv": null,
+  "doi": "https://doi.org/10.5281/zenodo.21882018",
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CLOSE (non-peer-reviewed)",
+  "claims": "C7",
+  "note": "Zenodo: measured damage of sequential weight edits; a frozen protected-subspace fence failed pre-registered bars; the small in-span component of an update is ~4000x more damaging per unit energy (cf. our negative result for gradient-subspace projection).",
+  "evidence": "abstract",
+  "peer": "non-peer-reviewed (Zenodo)",
+  "found_by": [
+   "S5"
+  ]
+ },
+ {
+  "set": "amendment2",
+  "idx": 961,
+  "title": "Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM",
+  "year": 2026,
+  "venue": "arXiv",
+  "arxiv": "2609.04098",
+  "doi": null,
+  "rules": [],
+  "status": "INCLUDED",
+  "level": "CONTEXT",
+  "claims": "",
+  "note": "",
+  "evidence": "abstract",
+  "peer": "preprint (arXiv)",
+  "found_by": [
+   "S8"
+  ]
+ }
+]

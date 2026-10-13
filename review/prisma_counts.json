@@ -1,0 +1,67 @@
+{
+ "raw_main": 4017,
+ "raw_main_arxiv": 1923,
+ "raw_main_oa": 2094,
+ "raw_supp": 2094,
+ "raw_supp_arxiv": 455,
+ "raw_supp_oa": 1639,
+ "snow_fwd": 210,
+ "snow_bwd": 108,
+ "main_unique": 2655,
+ "main_stage1": 1693,
+ "main_auto_excluded": 962,
+ "main_tierA": 587,
+ "main_tierB": 1106,
+ "supp_new_unique": 1484,
+ "supp_stage1": 816,
+ "supp_auto_excluded": 668,
+ "snow_new": 266,
+ "snow_stage1": 24,
+ "main_title_kept": 272,
+ "main_title_dropped": 1421,
+ "supp_title_kept": 40,
+ "supp_title_dropped": 776,
+ "snow_title_kept": 4,
+ "snow_title_dropped": 20,
+ "abstract_excluded": 23,
+ "exc_codes": {
+  "abstract-level exclusion E2": 7,
+  "abstract-level exclusion E4": 8,
+  "abstract-level exclusion E5": 6,
+  "abstract-level exclusion E1": 2
+ },
+ "included": 327,
+ "levels": {
+  "CLOSE": 32,
+  "CONTEXT": 256,
+  "SAME (construction)": 1,
+  "CLOSE (technique)": 2,
+  "SUPPORT": 16,
+  "CLOSE (covering part)": 3,
+  "CLOSE (empirical)": 3,
+  "CLOSE (architecture)": 4,
+  "CLOSE (framing)": 2,
+  "CLOSE (non-peer-reviewed)": 5,
+  "CLOSE (prior art)": 3
+ },
+ "unflagged_nonpeer": 16,
+ "amend2_screened": 962,
+ "amend2_kept": 34,
+ "by_source": {
+  "arxiv+openalex": 682,
+  "arxiv": 985,
+  "openalex": 988
+ },
+ "recall": {
+  "n": 33,
+  "found": 27,
+  "missed": [
+   "Jeong2023 Nearly Optimal Bounds for Cyclic Forgetting",
+   "Titans Learning to Memorize at Test Time",
+   "Longhorn: State Space Models are Amortized Online Learners",
+   "Yang2024 Parallelizing Linear Transformers with the Delta Rule over S",
+   "Yang2025 Gated Delta Networks: Improving Mamba2 with Delta Rule",
+   "Sun2025 Learning to (Learn at Test Time): RNNs with Expressive Hidde"
+  ]
+ }
+}

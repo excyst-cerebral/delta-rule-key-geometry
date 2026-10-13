@@ -1,0 +1,13 @@
+\begin{tabular}{lcccc}
+\toprule
+Learner & bits (Split / Permuted) & Split, class-inc. & Split, task-inc. & Permuted \\
+\midrule
+Fine-tuning & 0 / 0 & .195 (.980) & .631 (.435) & .185 (.702) \\
+EWC, $\lambda=10$ & 3.16\,M / 2.50\,M & .185 (.958) & .897 (.071) & .248 (.118) \\
+Replay, 20 / task & 627\,600 / 1.26\,M & .605 (.461) & .932 (.061) & .315 (.532) \\
+Replay, 200 / task & 6.28\,M / 12.6\,M & \textbf{.869} (.121) & \textbf{.980} (.007) & \textbf{.496} (.298) \\
+Layerwise projection & 61\,453 / 92\,595 & .359 (.155) & .773 (.010) & .274 (.110) \\
+Gradient subspace (OGD) & 11.4\,M / 67.2\,M & .195 (.979) & .689 (.362) & .210 (.697) \\
+Task adapters (rank 4)$^{\dagger}$ & 195\,840 / 237\,888 & -- & .957 (.000) & .770 (.000) \\
+\bottomrule
+\end{tabular}

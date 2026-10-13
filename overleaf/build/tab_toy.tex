@@ -1,0 +1,16 @@
+\begin{tabular}{llccc}
+\toprule
+arch & learner & final avg.\ accuracy & forgetting & paired $\Delta$ forgetting (wins) \\
+\midrule
+LTI & joint (reference) & .793$\pm$.072 & -- & -- \\
+LTI & fine-tuning (pure) & .623$\pm$.059 & \textbf{.385$\pm$.077} & -- \\
+LTI & EWC (anchor) & .686$\pm$.063 & .247$\pm$.066 & $-$.138 (5/5) \\
+LTI & replay & .766$\pm$.076 & .138$\pm$.082 & $-$.247 (5/5) \\
+selective & joint (reference) & .936$\pm$.043 & -- & -- \\
+selective & fine-tuning (pure) & .687$\pm$.102 & \textbf{.368$\pm$.138} & -- \\
+selective & + gate sparsity, $\lambda=0.01/0.03$ & .692/.685 & .354/.334 & $-$.014 (4/5) / $-$.033 (4/5) \\
+selective & + gate decorrelation, $\lambda=0.5/2$ & .691/.709 & .363/.331 & $-$.005 (4/5) / $-$.036 (2/5) \\
+selective & EWC (anchor) & .687$\pm$.136 & .252$\pm$.142 & $-$.115 (4/5) \\
+selective & replay & .882$\pm$.046 & .076$\pm$.030 & $-$.292 (5/5) \\
+\bottomrule
+\end{tabular}

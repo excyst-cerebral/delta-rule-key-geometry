@@ -1,0 +1,70 @@
+{
+ "n": 33,
+ "retrieved": 29,
+ "passed_stage1": 23,
+ "included": 21,
+ "lost": [
+  [
+   "Jeong2023",
+   "retrieved",
+   "failed S1"
+  ],
+  [
+   "Farajtabar2020",
+   "retrieved",
+   "failed S1"
+  ],
+  [
+   "Liang2024",
+   "retrieved",
+   "passed S1"
+  ],
+  [
+   "Wang2023",
+   "retrieved",
+   "passed S1"
+  ],
+  [
+   "Titans",
+   "NOT retrieved",
+   "failed S1"
+  ],
+  [
+   "Longhorn",
+   "retrieved",
+   "failed S1"
+  ],
+  [
+   "Peng2023",
+   "retrieved",
+   "failed S1"
+  ],
+  [
+   "Friedman2024",
+   "retrieved",
+   "failed S1"
+  ],
+  [
+   "Nair2026",
+   "retrieved",
+   "failed S1"
+  ],
+  [
+   "Yang2024",
+   "NOT retrieved",
+   "failed S1"
+  ],
+  [
+   "Yang2025",
+   "NOT retrieved",
+   "failed S1"
+  ],
+  [
+   "Sun2025",
+   "NOT retrieved",
+   "failed S1"
+  ]
+ ],
+ "no_abstract": 214,
+ "no_abstract_failed": 189
+}

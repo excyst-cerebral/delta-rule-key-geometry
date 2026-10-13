@@ -1,0 +1,26 @@
+
+== split-MNIST, task id given at test time (adapters) ==
+learner | n | final avg acc (task-masked) | forgetting | last-task | bits stored | adapter params/task | max |dlogit| on an old task
+adapter rank 0  (+head)          | 5 | 0.852±0.024 | 0.000±0.000 | 0.809±0.022 | 83200 | 650 | 0.0e+00
+adapter rank 1  (+head)          | 5 | 0.939±0.012 | 0.000±0.000 | 0.907±0.029 | 111360 | 870 | 0.0e+00
+adapter rank 4  (+head)          | 5 | 0.957±0.011 | 0.000±0.000 | 0.940±0.011 | 195840 | 1530 | 0.0e+00
+adapter rank 16 (+head)          | 5 | 0.965±0.003 | 0.000±0.000 | 0.951±0.007 | 533760 | 4170 | 0.0e+00
+reference rows (task-incremental), from exp_bench/runs:
+  fine-tuning                  n=5 final 0.631±0.043  forgetting 0.435±0.056  bits 0
+  EWC lam=10                   n=5 final 0.897±0.028  forgetting 0.071±0.039  bits 3157120
+  replay k=20                  n=5 final 0.932±0.015  forgetting 0.061±0.019  bits 627600
+  replay k=200                 n=5 final 0.980±0.003  forgetting 0.007±0.005  bits 6276000
+  layerwise frozen rho=0.99    n=5 final 0.773±0.023  forgetting 0.010±0.008  bits 61452
+  joint training               n=5 final 0.987±0.002
+
+== perm-MNIST, task id given at test time (adapters) ==
+learner | n | final avg acc (task-masked) | forgetting | last-task | bits stored | adapter params/task | max |dlogit| on an old task
+adapter rank 0  (+head)          | 5 | 0.554±0.013 | 0.000±0.000 | 0.539±0.010 | 95040 | 330 | 0.0e+00
+adapter rank 1  (+head)          | 5 | 0.677±0.008 | 0.000±0.000 | 0.680±0.009 | 130752 | 454 | 0.0e+00
+adapter rank 4  (+head)          | 5 | 0.770±0.006 | 0.000±0.000 | 0.770±0.007 | 237888 | 826 | 0.0e+00
+adapter rank 16 (+head)          | 5 | 0.814±0.003 | 0.000±0.000 | 0.815±0.021 | 666432 | 2314 | 0.0e+00
+reference rows (domain-incremental, NO task id), from exp_bench/runs -- note adapters here receive the task id, the others do not:
+  fine-tuning                  n=5 final 0.185±0.006  forgetting 0.702±0.007  bits 0
+  replay k=200                 n=5 final 0.496±0.009  forgetting 0.298±0.009  bits 12552000
+  layerwise frozen rho=0.99    n=5 final 0.274±0.010  forgetting 0.110±0.037  bits 92595
+  joint training (no task id)  n=5 final 0.614±0.009

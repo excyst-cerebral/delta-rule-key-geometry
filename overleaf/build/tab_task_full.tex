@@ -1,0 +1,18 @@
+\begin{tabular}{lcc}
+\toprule
+predictor & GDN 340M & GDN 360M \\
+\midrule
+age & .676 & .603 \\
+load $n$ & .625 & .524 \\
+age + one-hot load (B3) & .644 & .575 \\
+$P_1$ (long-memory heads) & .615 & .626 \\
+$P_{1b}$ (all heads) & .602 & .621 \\
+$P_1$ shuffled within load & .534 & .551 \\
+B3 + $P_1$ & .644 & .693 \\
+B3 + $P_{1b}$ & .638 & .664 \\
+B3 + shuffled $P_1$ & .645 & .538 \\
+\midrule
+H1: AUC(B3+$P_1$) $-$ AUC(B3), 95\% CI & $\pm$.000 ($-$.041, $+$.038) & $+$.118 ($+$.056, $+$.182) \\
+AUC(B3+$P_1$) $-$ AUC(B3+shuffled), 95\% CI & $-$.001 ($-$.039, $+$.038) & $+$.155 ($+$.084, $+$.225) \\
+\bottomrule
+\end{tabular}

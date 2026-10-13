@@ -1,0 +1,12 @@
+{
+ "n": 33,
+ "found": 27,
+ "missed": [
+  "Jeong2023 Nearly Optimal Bounds for Cyclic Forgetting",
+  "Titans Learning to Memorize at Test Time",
+  "Longhorn: State Space Models are Amortized Online Learners",
+  "Yang2024 Parallelizing Linear Transformers with the Delta Rule over S",
+  "Yang2025 Gated Delta Networks: Improving Mamba2 with Delta Rule",
+  "Sun2025 Learning to (Learn at Test Time): RNNs with Expressive Hidde"
+ ]
+}
